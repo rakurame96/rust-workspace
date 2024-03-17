@@ -11,11 +11,11 @@ cargo build
 cargo run
 
 #### for debug information
-rustc --explain <ErrorCode>
+rustc --explain <ErrorCode>\
 Example: rustc --explain E0277
 
 #### to compile single file
-rustc <rust ssource file name>
+rustc <rust ssource file name>\
 Example: rustc main.rs
 
 # Reference material:
