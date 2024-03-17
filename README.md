@@ -25,5 +25,5 @@ rustc <rust ssource file name>
 Example: rustc main.rs
 
 Reference material:
-1. [!Why Rust]https://inpyjama.com/day0-why-rust/
-2. [!Day 1: Setting Up the Environment]https://inpyjama.com/day1-setting-up-the-environment/
+1. [Why Rust](https://inpyjama.com/day0-why-rust/)
+2. [Day 1: Setting Up the Environment](https://inpyjama.com/day1-setting-up-the-environment/)
