@@ -10,7 +10,7 @@ let my_variable: data_type;
 let my_variable: data_type = value;
 ```
 
-{:x} = displays hexadecimal notation in lowercase
+{:x} = displays hexadecimal notation in lowercase\
 {:X} = displays hexadecimal notation in uppercase
 
 > **_NOTE:_**
