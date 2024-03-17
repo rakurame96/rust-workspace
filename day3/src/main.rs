@@ -13,7 +13,7 @@ fn main() {
     println!("{:?}", (12, true, "hello")); // Debug output
     println!("{:#?}", (12, true, "hello")); // Pretty-printed debug output 
     println!("Number: {}", 42);  
-    println!("Binary: {:b}, Hex: {:x}, Octal: {:o}", 10, 10, 10); 
+    println!("Binary: {:b}, Hex: {:x}, Octal: {:o}", 10, 15, 10); 
 
     // Formatting with named arguments
     println!("{name} says {greeting}.", name="Alice", greeting="Howdy");
