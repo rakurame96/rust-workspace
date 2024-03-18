@@ -52,7 +52,7 @@ fn main() {
 ```
 In the above program, variable `number` is considered as string and the same variable `number` reused as integer. Only thing we need to do is, use the `let` keyword. In this case, we cannot use `mut` keyword. As it denotes that the variable is mutable and value can be modified. In general, variables created using `let` are immutable.
 
-> **_ NOTE: Function in Rust _**
+> **_NOTE: Function in Rust_**
 ```rust 
 fn sale_price(price: i32) -> i32 {
     if is_even(price) {
@@ -66,6 +66,32 @@ Return of the function is mentioned as `fn sale_price(price: i32) -> i32`, opera
 
 For function, where it is returing data back to the caller, then in the particular line of code we should not use `semicolon` - `;`
 
+> **_NOTE: Why unsafe keyword is necessary in the above situation_**
+Looking at the error, it complains that using mutable statics is unsafe and needs an unsafe block. It also mentions the potential for data races if increment_counter is called from multiple threads. Rust isn't being picky – it's absolutely right! Why? Because multiple threads could potentially call increment_counter simultaneously, leading to a data race – a situation where multiple threads access the same memory location without proper synchronization. This can corrupt the value of COUNTER.
+
+This is how Rust ensures memory safety – by refusing to compile code that could lead to trouble. However, there might be times when you absolutely need a mutable static. The compiler leaves us a hint: mutable statics require an unsafe block. Think of the unsafe keyword as a backdoor for special cases where you need to bypass Rust's usual safety checks.
+
+##### Constants and Statics
+**Consts** are essentially fixed values known at compile time. They must have a type annotation and are perfect for situations like array sizes or mathematical constants. They behave similarly to #define macros in C, but are type-safe and prevent unexpected behavior
+
+**Statics** are similar to const, but they have a fixed memory location throughout the program's execution. This makes them useful for global variables that need to persist, like configuration settings or file handles. However, unlike const, statics can't be used in all contexts (like within functions) due to their global nature.
+
+While statics can be declared as mutable (using mut), Rust discourages this practice and considers it unsafe. Let's see this with a quick experiment
+
+###### Example for Statics
+```rust
+static mut COUNTER: u32 = 0; // Mutable static variable
+
+fn increment_counter() {
+    COUNTER += 1; // This line is unsafe!
+}
+
+fn main() {
+    increment_counter();
+    println!("{}", COUNTER); // Will this always print 1?
+}
+```
+
 # Reference material:
 1. [Why Rust](https://inpyjama.com/day0-why-rust/)
 2. [Day 1: Setting Up the Environment](https://inpyjama.com/day1-setting-up-the-environment/)
@@ -73,3 +99,4 @@ For function, where it is returing data back to the caller, then in the particul
 4. [Day 3: Prints in Rust](https://inpyjama.com/day3-printing/)
 5. [Day 4: Printing Custom types](https://inpyjama.com/day4-debug-display/)
 6. [Day 5: Variables](https://inpyjama.com/day-5-data-types-in-rust/)
+7. [Day 6: Variables Continued](https://inpyjama.com/day6-variables-contd/)
