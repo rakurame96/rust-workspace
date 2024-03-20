@@ -92,6 +92,33 @@ fn main() {
 }
 ```
 
+> **_Type Conversions in Rust_** 
+Rust prioritizes safety and predictability, requiring developers to be explicit about type conversions. So, implicit type conversions is not allowed in Rust and if user tries to perform implicit conversion, compilation won't happen.
+
+User need to explicitly mention the type conversion using `as` keyword and the target type. 
+
+The Rust compiler won't let this slide. It complains about a type mismatch because it refuses to implicitly convert from a floating-point type to an integer. While Rust prefers explicit type conversions, it provides the `as` operator for those intentional changes. The `as` operator offers a controlled way to convert between compatible numeric types.
+
+By making conversions explicit, Rust forces you to confront these potential problems head-on. Second, explicit conversions enhance code readability by clearly signifying where type changes are happening and what your intentions are.
+
+```C
+#include <stdio.h>
+
+int main() {
+    double pi = 3.14;
+    int whole_pi = pi;  // Implicit conversion from double to int
+    printf("Whole part of pi: %d\n", whole_pi);  // Output: 3
+}
+```
+
+```rust
+fn main() {
+    let pi:f64 = 3.14; 
+    let whole_pi:u32 = pi as u32;  
+    println!("Whole part of pi: {}", whole_pi);
+}
+```
+
 # Reference material:
 1. [Why Rust](https://inpyjama.com/day0-why-rust/)
 2. [Day 1: Setting Up the Environment](https://inpyjama.com/day1-setting-up-the-environment/)
@@ -100,3 +127,4 @@ fn main() {
 5. [Day 4: Printing Custom types](https://inpyjama.com/day4-debug-display/)
 6. [Day 5: Variables](https://inpyjama.com/day-5-data-types-in-rust/)
 7. [Day 6: Variables Continued](https://inpyjama.com/day6-variables-contd/)
+8. [Day 7: Rust hate Implicit](https://inpyjama.com/day7-rust-hate-implicits/)
