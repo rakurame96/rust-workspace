@@ -119,6 +119,44 @@ fn main() {
 }
 ```
 
+> **_If-else case example from rustlings_**
+```rust
+pub fn bigger(a: i32, b: i32) -> i32 {
+    // Complete this function to return the bigger number!
+    // Do not use:
+    // - another function call
+    // - additional variables
+    if a > b {
+        a
+    } else {
+        b
+    }
+}```
+
+```rust
+pub fn foo_if_fizz(fizzish: &str) -> &str {
+    if fizzish == "fizz" {
+        "foo"
+    } else if fizzish == "fuzz"{
+        "bar" 
+    } else {
+        "baz"
+    }
+}
+```
+
+> **_Explanation about `&'static str`_**
+`pub fn animal_habitat(animal: &str) -> &'static str`
+First of all, &'static str is a type which consists of 3 parts - &, 'static, str.
+
+& means this type is a reference, borrowed from a value owned by someone else. Every references has associated its lifetime and the Rust compiler proves that the usage of the reference never exceed its lifetime. Safe Rust cannot touches dangling reference even by accident.
+
+'a is a lifetime notation named a, and 'static is a special one which represents the lifetime of the process itself. It ends when the process terminates so it can be practically considered endless. &'static means a reference that cannot be dangling.
+
+str is a type which represents a sequence of bytes which also is valid UTF-8 sequence. It's size cannot be determined statically as there isn't single "length" for every possible text data. In Rust we call such types DST(Dynamically Sized Type) and they cannot be placed on the stack without some indirection types like Box<T>, &T etc.
+
+As a conclusion, &'static str is a reference to the UTF-8 encoded variable length of byte sequence, which is valid for the entire lifetime of the process. But how can we obtain such type? Normally it's from the string literals, which are embeded directly on the executable binary(like .rodata section of the elf file) and loaded to the read-only section of the memory by the OS before execution.
+
 # Reference material:
 1. [Why Rust](https://inpyjama.com/day0-why-rust/)
 2. [Day 1: Setting Up the Environment](https://inpyjama.com/day1-setting-up-the-environment/)
