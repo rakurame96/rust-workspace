@@ -157,6 +157,11 @@ str is a type which represents a sequence of bytes which also is valid UTF-8 seq
 
 As a conclusion, &'static str is a reference to the UTF-8 encoded variable length of byte sequence, which is valid for the entire lifetime of the process. But how can we obtain such type? Normally it's from the string literals, which are embeded directly on the executable binary(like .rodata section of the elf file) and loaded to the read-only section of the memory by the OS before execution.
 
+> **_Tuples_**
+Tuples are a simple yet powerful feature that allows us to group together multiple values of different types. They are useful when you want to return multiple values from a function or when you want to group related data together.
+
+In Rust, once a tuple is created, its size and the types of its elements cannot be changed. This might give the impression that tuples are immutable, but that's not true. Elements of a tuple can be mutated.
+
 # Reference material:
 1. [Why Rust](https://inpyjama.com/day0-why-rust/)
 2. [Day 1: Setting Up the Environment](https://inpyjama.com/day1-setting-up-the-environment/)
@@ -166,3 +171,4 @@ As a conclusion, &'static str is a reference to the UTF-8 encoded variable lengt
 6. [Day 5: Variables](https://inpyjama.com/day-5-data-types-in-rust/)
 7. [Day 6: Variables Continued](https://inpyjama.com/day6-variables-contd/)
 8. [Day 7: Rust hate Implicit](https://inpyjama.com/day7-rust-hate-implicits/)
+9. [Day 8: Tuples](https://inpyjama.com/day-8-tuples/)
