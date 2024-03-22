@@ -162,6 +162,22 @@ Tuples are a simple yet powerful feature that allows us to group together multip
 
 In Rust, once a tuple is created, its size and the types of its elements cannot be changed. This might give the impression that tuples are immutable, but that's not true. Elements of a tuple can be mutated.
 
+> **_Arrays_**
+Arrays are a fundamental data structure that allow us to store multiple values of the same type in a single variable. They’re incredibly useful for organizing data and making our code more efficient and readable.
+* Syntax: `let variable_name : [data_type; size]`
+* specify the type of data the array will hold, and the size of the array
+* Example: `let my_numbers: [u32; 5] = [1, 2, 3, 4, 5];`
+* Accessing elements in an array is straightforward. We use indexing, just like in most other programming languages.
+* Example: `println!("The first number: {}", my_numbers[0]);`
+
+* **NOTE** Arrays in rust are bound-checked. This means that if you try to access or modify an element at an index that doesn’t exist, Rust will throw a compile-time error
+
+> **_Macros in Rust_**
+* `#[warn(unused_variables)]` - This option is by default ON, informs about the dead code
+* `#[allow(unused_variables)]` - suppress the dead code warning
+* `#[warn(unused_assignments)]` - This option is by default ON, informs about any unused assignment
+* `#[allow(unused_assignments)]` - allows unused assignment
+
 # Reference material:
 1. [Why Rust](https://inpyjama.com/day0-why-rust/)
 2. [Day 1: Setting Up the Environment](https://inpyjama.com/day1-setting-up-the-environment/)
@@ -172,3 +188,4 @@ In Rust, once a tuple is created, its size and the types of its elements cannot 
 7. [Day 6: Variables Continued](https://inpyjama.com/day6-variables-contd/)
 8. [Day 7: Rust hate Implicit](https://inpyjama.com/day7-rust-hate-implicits/)
 9. [Day 8: Tuples](https://inpyjama.com/day-8-tuples/)
+10. [Day 9: Arrays](https://inpyjama.com/day-9-arrays/)
