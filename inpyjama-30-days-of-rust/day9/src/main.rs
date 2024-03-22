@@ -1,3 +1,4 @@
+#[allow(unused_imports)]
 use std::fmt::Display;
 
 fn main() {
