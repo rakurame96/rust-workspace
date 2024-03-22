@@ -177,6 +177,10 @@ Arrays are a fundamental data structure that allow us to store multiple values o
 * `#[allow(unused_variables)]` - suppress the dead code warning
 * `#[warn(unused_assignments)]` - This option is by default ON, informs about any unused assignment
 * `#[allow(unused_assignments)]` - allows unused assignment
+* `#[derive(Debug)]` - To bring-in the debug trait for printing
+* `#[warn(unused_imports)]` - This option is ON by default, informs about the unused imports
+* `#[allow(unused_imports)]` - suppress the unused imports warning
+
 
 # Reference material:
 1. [Why Rust](https://inpyjama.com/day0-why-rust/)
