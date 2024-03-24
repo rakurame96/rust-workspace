@@ -30,6 +30,16 @@ rustc <rust ssource file name>
 ```
 Example: `rustc main.rs`
 
+#### to update the *Crate* to get a New Version
+```shell
+cargo update
+```
+
+#### to read documentation about the installed crates
+```shell
+cargo doc --open
+```
+
 > **_NOTE: Ruslings Commands_**
 Commands available to you in watch mode:
   * `hint`   - prints the current exercise's hint
