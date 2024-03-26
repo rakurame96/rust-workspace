@@ -1,5 +1,5 @@
-### Projects section
+### Book Examples section
 
-* Covers projects from the book 
+* Covers examples code snippet from the book 
     * Book: The Rust Programming Language by Steve Klabnik & Carol Nichols
     

@@ -83,6 +83,13 @@ This is how Rust ensures memory safety – by refusing to compile code that coul
 
 ##### Constants and Statics
 **Consts** are essentially fixed values known at compile time. They must have a type annotation and are perfect for situations like array sizes or mathematical constants. They behave similarly to #define macros in C, but are type-safe and prevent unexpected behavior
+* Const can be defined in both local and global scope. 
+* Const must be annotated with the datatype unlike the other variables
+* Rust suggested way of creating constants is, all uppercase with underscores between words
+```rust
+// consts GLOBAL_CONST = 180;     // compile error as constants always needs to be annotated with the datatype
+const GLOBAL_CONST: u32 = 180;  
+```
 
 **Statics** are similar to const, but they have a fixed memory location throughout the program's execution. This makes them useful for global variables that need to persist, like configuration settings or file handles. However, unlike const, statics can't be used in all contexts (like within functions) due to their global nature.
 
@@ -206,3 +213,4 @@ Arrays are a fundamental data structure that allow us to store multiple values o
 8. [Day 7: Rust hate Implicit](https://inpyjama.com/day7-rust-hate-implicits/)
 9. [Day 8: Tuples](https://inpyjama.com/day-8-tuples/)
 10. [Day 9: Arrays](https://inpyjama.com/day-9-arrays/)
+11. [Day 10: Heap vs Stack](https://inpyjama.com/day-10-heap-vs-stack/)
