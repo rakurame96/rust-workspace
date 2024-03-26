@@ -198,6 +198,18 @@ Arrays are a fundamental data structure that allow us to store multiple values o
 * `#[warn(unused_imports)]` - This option is ON by default, informs about the unused imports
 * `#[allow(unused_imports)]` - suppress the unused imports warning
 
+> **_Datatypes_**
+* Two types of datatype in rust
+    * scalar type
+        * it represents the single value. Rust has 4 primary scalar types
+            [*] integers
+            [*] floating-point numbers
+            [*] booleans
+            [*] characters
+    * compound type
+    
+* Rust is a statically typed language
+
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
 * https://fasterthanli.me/articles/a-half-hour-to-learn-rust

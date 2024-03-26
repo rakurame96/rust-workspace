@@ -1,0 +1,9 @@
+[workspace]
+name = "projects"
+version = "0.1.0"
+edition = "2021"
+resolver = "2"
+
+members = [
+    "guessing-game",
+]
