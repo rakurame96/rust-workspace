@@ -1,0 +1,46 @@
+// code snippet from the article -> https://fasterthanli.me/articles/a-half-hour-to-learn-rust
+
+// ------------------------------------------------------ //
+// fn main() {
+//     let pair = ('a', 17);
+//     pair.0; // this is 'a'
+//     pair.1; // this is 17
+    
+//     let _:u32 = 455;
+    
+//     println!("pair 0 : {}", pair.0);
+//     println!("pair 1 : {}", pair.1);
+    
+//     println!("print _: {}", _);
+// }
+// ------------------------------------------------------ //
+
+// ------------------------------------------------------ //
+// fn main() {
+//     let a = {
+//         let y = 1; // first statement
+//         let z = 2; // second statement
+//         y + z // this is the *tail* - what the whole block will evaluate to
+//     };
+    
+//     println!("Value of a : {}", a);
+//     let x = "out";
+//     {
+//         // this is a different `x`
+//         let x = "in";
+//         println!("{}", x);
+//     }
+//     println!("{}", x);
+// }
+// ------------------------------------------------------ //
+
+// ------------------------------------------------------ //
+/* Implicit Return -> https://fasterthanli.me/articles/a-half-hour-to-learn-rust#implicit-return */
+fn fair_dice_roll() -> i32 {
+    return 4;
+}
+
+fn fair_dice_roll() -> i32 {
+    4
+}
+// ------------------------------------------------------ //
