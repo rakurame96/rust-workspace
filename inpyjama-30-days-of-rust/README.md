@@ -197,18 +197,59 @@ Arrays are a fundamental data structure that allow us to store multiple values o
 * `#[derive(Debug)]` - To bring-in the debug trait for printing
 * `#[warn(unused_imports)]` - This option is ON by default, informs about the unused imports
 * `#[allow(unused_imports)]` - suppress the unused imports warning
+* `#[deny(overflowing_literals)]` - deny overflowing literals ON by default
 
 > **_Datatypes_**
+* Rust is a statically typed language
 * Two types of datatype in rust
     * scalar type
         * it represents the single value. Rust has 4 primary scalar types
-            [*] integers
-            [*] floating-point numbers
-            [*] booleans
-            [*] characters
+            * integers
+                * signed
+                * unsigned
+            * floating-point numbers
+                * two types
+                    * f64 (default) - double precision
+                    * f32 - single precision
+                * all floating-point types are signed
+            * booleans
+            * characters
+
     * compound type
-    
-* Rust is a statically typed language
+        * two compound datatypes
+            * Tuple Type
+                * A tuple is a general way of grouping together a number of values with a variety of types into one compound type. Tuples have a fixed length: once declared, they cannot grow or shrink in size.
+                * We create a tuple by writing a comma-separated list of values inside parentheses. Each position in the tuple has a type, and the types of the different values in the tuple don’t have to be the same
+                * Example_1
+                ```rust
+                let tup: (u32, f32, char, u8) = (500, 6.4, "a", 1);
+
+                let (a, b, c, d) = tup;     // pattern matching concept
+
+                // what happens here is, 
+                // a = 500, b = 6.4, c = 'a', d = 1
+                // each variable binds to one tuple 
+                ```
+                * Example_2
+                ```rust
+                fn main() {
+                    let x: (i32, f64, u8) = (500, 6.4, 1);
+                    let five_hundred = x.0;     // first element with index[0] from the x assigned to the variable five_hundred
+                    let six_point_four = x.1;
+                    let one = x.2;
+                }
+                ```
+            * Array Type
+
+> **_Functions_**
+* Rust code uses snake case as the conventional style for function and variable names, in which all letters are lowercase and underscores separate words.
+* In function signatures, you must declare the type of each parameter. This is a deliberate decision in Rust’s design: requiring type annotations 
+in function definitions means the compiler almost never needs you to use them elsewhere in the code to figure out what type you mean. The compiler 
+is also able to give more helpful error messages if it knows what types the function expects
+
+**Statements & Expressions**
+* Statements are instructions that perform some action and do not return a value.
+* Expressions evaluate to a resultant value.
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
