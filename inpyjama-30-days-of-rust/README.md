@@ -254,6 +254,25 @@ is also able to give more helpful error messages if it knows what types the func
 > **_Conditional_Statements_**
 
 
+> **_Import of libraries or dependencies_**
+```rust
+use std::cmp::min;
+
+let least = min(7, 1); // this is 1
+```
+**alternate ways to import libraries**
+```rust
+// this works:
+use std::cmp::min;
+use std::cmp::max;
+
+// this also works:
+use std::cmp::{min, max};
+
+// this also works!
+use std::{cmp::min, cmp::max};
+```
+
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
 * https://fasterthanli.me/articles/a-half-hour-to-learn-rust
