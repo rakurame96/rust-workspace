@@ -256,25 +256,6 @@ is also able to give more helpful error messages if it knows what types the func
 > **_Conditional_Statements_**
 
 
-> **_Import of libraries or dependencies_**
-```rust
-use std::cmp::min;
-
-let least = min(7, 1); // this is 1
-```
-**alternate ways to import libraries**
-```rust
-// this works:
-use std::cmp::min;
-use std::cmp::max;
-
-// this also works:
-use std::cmp::{min, max};
-
-// this also works!
-use std::{cmp::min, cmp::max};
-```
-
 > **_Loops_**
 * Different types of loops in Rust:
     * repeating code `loop` keyword
@@ -300,6 +281,25 @@ fn main() {
 }
 ```
 * we can break the loop with the help of loop label `break <loop_label`
+
+> **_Import of libraries or dependencies_**
+```rust
+use std::cmp::min;
+
+let least = min(7, 1); // this is 1
+```
+**alternate ways to import libraries**
+```rust
+// this works:
+use std::cmp::min;
+use std::cmp::max;
+
+// this also works:
+use std::cmp::{min, max};
+
+// this also works!
+use std::{cmp::min, cmp::max};
+```
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
