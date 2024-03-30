@@ -198,6 +198,8 @@ Arrays are a fundamental data structure that allow us to store multiple values o
 * `#[warn(unused_imports)]` - This option is ON by default, informs about the unused imports
 * `#[allow(unused_imports)]` - suppress the unused imports warning
 * `#[deny(overflowing_literals)]` - deny overflowing literals ON by default
+* to suppress compiler warning on unused variables, prefix the variable name with an underscore: 
+    * example: `_index` -> variables whose name start with underscore `_` compiler warning will be suppressed
 
 > **_Datatypes_**
 * Rust is a statically typed language
@@ -253,6 +255,32 @@ is also able to give more helpful error messages if it knows what types the func
 
 > **_Conditional_Statements_**
 
+
+> **_Loops_**
+* Different types of loops in Rust:
+    * repeating code `loop` keyword
+        * returning values from loops
+        * loop labels to disambiguate between multiple loops
+    * conditional loops with `while` 
+    * looping through a collection through `for` loop
+```rust
+// loop syntax without loop labels
+fn main() {
+    loop {
+        println!("Again");
+    }
+}
+```
+```rust
+// loop syntax with loop labels
+// labels help to break the loop by calling `break <loop_label>`
+fn main() {
+    'counting_up : loop {
+        println!("counting_up");
+    }
+}
+```
+* we can break the loop with the help of loop label `break <loop_label`
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
