@@ -301,6 +301,9 @@ use std::cmp::{min, max};
 use std::{cmp::min, cmp::max};
 ```
 
+**Concept of Ownership in rust**
+> The types covered previously (u8/i8, f8/16, etc,.) are of a known size, can be stored on the stack and popped off the stack when their scope is over, and can be quickly and trivially copied to make a new, independent instance if another part of code needs to use the same value in a different scope.
+
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
 * https://fasterthanli.me/articles/a-half-hour-to-learn-rust

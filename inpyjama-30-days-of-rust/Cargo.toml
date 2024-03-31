@@ -1,7 +1,4 @@
 [workspace]
-name = "inpyjama-30-days-of-rust"
-version = "0.1.0"
-edition = "2021"
 resolver = "2"
 
 members = [
