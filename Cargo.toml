@@ -1,0 +1,8 @@
+[workspace]
+resolver = "2"
+
+members = [
+    "book-examples",
+    "inpyjama-30-days-of-rust",
+    "projects",
+]
