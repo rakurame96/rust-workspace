@@ -304,6 +304,14 @@ use std::{cmp::min, cmp::max};
 **Concept of Ownership in rust**
 > The types covered previously (u8/i8, f8/16, etc,.) are of a known size, can be stored on the stack and popped off the stack when their scope is over, and can be quickly and trivially copied to make a new, independent instance if another part of code needs to use the same value in a different scope.
 
+**Shallow Copy and Deep Copy**
+> A **shallow copy** creates a new object and inserts references to the elements of the original object. So, if you modify the original object, the changes will be reflected in the shallow copy. Shallow copying is faster and uses less memory because it only copies the references to objects, not the objects themselves. In some cases, having multiple references to the same object can be useful. For example, if multiple parts of your code need to interact with the same object, a shallow copy can be an excellent choice. However, Since the copied variables point to the same memory location, changes to the original object will affect the copied object and vice versa. This can lead to unexpected behavior if not handled carefully.
+
+> A **deep copy**, on the other hand, creates a new object and recursively adds copies of the elements of the original object. Changes to the original object do not affect the deep copy. This is useful when you need to work with a copy of an object without affecting the original. However, as you can predict performing a deep copy takes a toll on both memory and cpu cycles. Deep copying is slower and uses more memory than shallow copying because it involves creating copies of all elements of the copied object. Implementing deep copy can be complex, especially for objects with nested or recursive data structures. You need to recursively make a copy of all the members of the structures.
+
+**Garbage Collection**
+> Python employs a mechanism known as **garbage collection** for automatic memory management. The garbage collector, a part of Python’s standard library, is engineered to reclaim memory that’s occupied by objects no longer in use by the program. The garbage collector in Python operates using a method called reference counting. Each object has a count that keeps track of the number of references to it. When an object’s reference count falls to zero, it becomes unreachable and is marked for garbage collection.
+
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
 * https://fasterthanli.me/articles/a-half-hour-to-learn-rust
@@ -320,3 +328,4 @@ use std::{cmp::min, cmp::max};
 9. [Day 8: Tuples](https://inpyjama.com/day-8-tuples/)
 10. [Day 9: Arrays](https://inpyjama.com/day-9-arrays/)
 11. [Day 10: Heap vs Stack](https://inpyjama.com/day-10-heap-vs-stack/)
+12. [Day 11: Handling Heap](https://inpyjama.com/day-11-handling-strings/)
