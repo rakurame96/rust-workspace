@@ -204,7 +204,7 @@ Arrays are a fundamental data structure that allow us to store multiple values o
 > **_Datatypes_**
 * Rust is a statically typed language
 * Two types of datatype in rust
-    * scalar type
+    * **scalar type**
         * it represents the single value. Rust has 4 primary scalar types
             * integers
                 * signed
@@ -217,7 +217,7 @@ Arrays are a fundamental data structure that allow us to store multiple values o
             * booleans
             * characters
 
-    * compound type
+    * **compound type**
         * two compound datatypes
             * Tuple Type
                 * A tuple is a general way of grouping together a number of values with a variety of types into one compound type. Tuples have a fixed length: once declared, they cannot grow or shrink in size.
@@ -242,6 +242,18 @@ Arrays are a fundamental data structure that allow us to store multiple values o
                 }
                 ```
             * Array Type
+    * **String type**
+        * Rust's char type is not limited to a single byte. Instead, it represents a single **Unicode Scalar Value**. Similar to Rust chars, Rust strings are not limited to ASCII chars and can represent **UTF-8**. This ensures your Rust programs can handle text from around the world!
+        * Strings can have elements of varying sizes. Using the same size for all char representations would waste a lot of memory. For example, to represent the `🦀` Rust needs 4 bytes, but 'R' can be represented using a single byte.
+        * This means that elements in a Rust string are not all of the same size, and we cannot access them using indexing directly, as rust does not know what the right index boundary should be.
+        * to access individual elements in Rust, compiler suggests we should access the index using either `chars().nth()` or `bytes().nth()`.
+        * Let's have a look at how strings are represented in memory. 
+            * A String internally has three parts: 
+                * a pointer to the data on the heap, 
+                * the length of the string (how many bytes), and 
+                * its capacity (the total allocated space on the heap). 
+            * One of the things to notice is that Rust's **String type explicitly stores the length of the string**. This eliminates the need for **null termination** and prevents the **risk of reading invalid memory**.
+        * to expand the string, we need to use `push_str()` method. 
 
 > **_Functions_**
 * Rust code uses snake case as the conventional style for function and variable names, in which all letters are lowercase and underscores separate words.
@@ -254,7 +266,8 @@ is also able to give more helpful error messages if it knows what types the func
 * Expressions evaluate to a resultant value.
 
 > **_Conditional_Statements_**
-
+* if
+* if-else
 
 > **_Loops_**
 * Different types of loops in Rust:
@@ -330,3 +343,8 @@ use std::{cmp::min, cmp::max};
 11. [Day 10: Heap vs Stack](https://inpyjama.com/day-10-heap-vs-stack/)
 12. [Day 11: Handling Heap](https://inpyjama.com/day-11-handling-strings/)
 13. [Day 12: Strings](https://inpyjama.com/day-12-strings/)
+
+# Other important links
+1. [UTF8 Decoder](https://www.browserling.com/tools/utf8-decode)
+2. [Full Emoji List](https://www.unicode.org/emoji/charts/full-emoji-list.html)
+3. [Emoji Unicode Tables](https://apps.timwhitlock.info/emoji/tables/unicode)
