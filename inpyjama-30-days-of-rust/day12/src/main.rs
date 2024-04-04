@@ -17,7 +17,7 @@ fn main() {
     println!("char [1]: 0x{:X}, size : {} ", message.bytes().nth(1).unwrap(), message.chars().nth(1).unwrap().len_utf8());
     println!("char [2]: 0x{:X}, size : {} ", message.bytes().nth(2).unwrap(), message.chars().nth(2).unwrap().len_utf8());
     println!("char [3]: 0x{:X}, size : {} ", message.bytes().nth(3).unwrap(), message.chars().nth(3).unwrap().len_utf8());
-    println!("char [4]: 0x{:x}, size : {} ", message.bytes().nth(4).unwrap()., message.chars().nth(4).unwrap().len_utf8());
+    println!("char [4]: 0x{:x}, size : {} ", message.bytes().nth(4).unwrap(), message.chars().nth(4).unwrap().len_utf8());
 
     println!("message.bytes().nth(5) : 0x{:X} ", message.bytes().nth(5).unwrap());
     println!("message.bytes().nth(6) : 0x{:X} ", message.bytes().nth(6).unwrap());
@@ -26,7 +26,7 @@ fn main() {
     // using char method because chars reads the string like below
     // 'r', 'u', 's', 't', & '🦀'
     // that's why, we could not able to read individual characters of 'rust' symbol
-    println!("message.chars().nth(4) : {} ", message.chars().nth(4).unwrap().);
+    println!("message.chars().nth(4) : {} ", message.chars().nth(4).unwrap());
     // println!("message.chars().nth(5) : {} ", message.chars().nth(5).unwrap());   // uncomment to see rust getting 'panicked'
     // println!("message.chars().nth(6) : {} ", message.chars().nth(6).unwrap());
     // println!("message.chars().nth(7) : {} ", message.chars().nth(7).unwrap());
