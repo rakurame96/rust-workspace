@@ -348,3 +348,6 @@ use std::{cmp::min, cmp::max};
 1. [UTF8 Decoder](https://www.browserling.com/tools/utf8-decode)
 2. [Full Emoji List](https://www.unicode.org/emoji/charts/full-emoji-list.html)
 3. [Emoji Unicode Tables](https://apps.timwhitlock.info/emoji/tables/unicode)
+4. [Writing an OS in Rust](https://os.phil-opp.com/)
+5. https://fasterthanli.me/
+6. [Blog_OS Github Repository](https://github.com/phil-opp/blog_os) - Writing an OS in Rust
