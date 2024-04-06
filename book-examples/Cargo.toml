@@ -10,5 +10,5 @@ members = [
     "ch3-loop-1",
     "ch3-shadowing",
     "ch3-while",
-    "ch4-4-1", "ch4-4-3-ownership", "ch4-4-4-return-values", "ch4-4-5-return-ownership", "ch4-4-6-references-borrowing",
+    "ch4-4-1", "ch4-4-3-ownership", "ch4-4-4-return-values", "ch4-4-5-return-ownership", "ch4-4-6-1-mutable-references", "ch4-4-6-references-borrowing",
 ]

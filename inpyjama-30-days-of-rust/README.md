@@ -325,6 +325,49 @@ use std::{cmp::min, cmp::max};
 **Garbage Collection**
 > Python employs a mechanism known as **garbage collection** for automatic memory management. The garbage collector, a part of Python’s standard library, is engineered to reclaim memory that’s occupied by objects no longer in use by the program. The garbage collector in Python operates using a method called reference counting. Each object has a count that keeps track of the number of references to it. When an object’s reference count falls to zero, it becomes unreachable and is marked for garbage collection.
 
+**References and Borrowing**
+> A reference is like a pointer in that it's and address we can follow to access the data stored at that address; that data is owned by some other variable.
+> Unlike a pointer, a reference is guaranteed to point to a valid value of a particular type for the life of that reference.
+
+> **Note:** The opposite of referencing by using `&` is dereferencing, which is accomplished with the dereference operator `*`
+```rust
+// Example for referencing and the ownership
+fn main() {
+    let s1 = String::from("hello");
+
+    // here, &s1 lets us create a reference that refers to the value of s1 but does not own it.
+
+    // because it does not own it, the value points to will not be dropped when the reference stops being used.
+    let len = calculate_length(&s1);
+
+    println!("the length of {s1} is {len}.");
+}
+
+// s is a reference to a string
+fn calculate_length(s: &String) -> usize {
+    s.len()
+} // Here, s goes out of scope. But because it does not have ownership of what it refers to, the string is not dropped.
+```
+
+**Mutable Referenes**
+> It allows us to modify a borrowed value with just a few small tweaks that use.
+```rust
+fn main() {
+    let mut s = String::from("hello");
+
+    // below line will not work. as the string is not mutable
+    // change(&s);
+    
+    // modified the variable s as a mutable - mutable references
+    change(&mut s);
+}
+
+// below line will throw the error
+fn change(some_string: &mut String) {
+    some_string.push_str(", world");
+}
+```
+
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
 * https://fasterthanli.me/articles/a-half-hour-to-learn-rust
