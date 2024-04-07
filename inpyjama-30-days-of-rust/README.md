@@ -370,6 +370,10 @@ fn change(some_string: &mut String) {
 
 **Slice type**
 > **Slice** let you reference a contiguous sequence of elements in a collection rather than the whole collection. A slice is a kind of reference, so it does not have ownership.
+> `iter` method returns a tuple of 2 elements 
+    > 1st element is `index`
+    > 2nd element is `reference_to_the_element_itself`
+    > example: `(i, &item)`
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
