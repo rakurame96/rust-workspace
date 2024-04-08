@@ -374,6 +374,14 @@ fn change(some_string: &mut String) {
     > 1st element is `index`
     > 2nd element is `reference_to_the_element_itself`
     > example: `(i, &item)`
+> **string slices** - is a reference to part of a string and it looks like below: `[starting_index..ending_index]`
+```rust
+let s = String::from("hello world");
+
+let hello = &s[0..5];
+let world = &s[6..11];
+```
+
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
