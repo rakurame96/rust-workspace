@@ -1,0 +1,3 @@
+[submodule "projects/uds-simulator"]
+	path = projects/uds-simulator
+	url = https://github.com/rakurame96/uds-simulator-in-rust.git
