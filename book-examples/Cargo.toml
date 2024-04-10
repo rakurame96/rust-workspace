@@ -1,7 +1,7 @@
 [workspace]
 resolver = "2"
 
-members = [
+members = [ 
     "ch3-conditions",
     "ch3-constants",
     "ch3-datatypes",
@@ -11,4 +11,5 @@ members = [
     "ch3-shadowing",
     "ch3-while",
     "ch4-4-1", "ch4-4-3-ownership", "ch4-4-4-return-values", "ch4-4-5-return-ownership", "ch4-4-6-1-mutable-references", "ch4-4-6-references-borrowing", "ch4-4-7-slice-type",
+    "ch4-4-7-1-string-literal-slices", "ch4-4-7-2-string-literal-parameters",   
 ]
