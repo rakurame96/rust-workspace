@@ -1,5 +1,5 @@
 [package]
-name = "ch4-4-7-2-string-literal-parameters"
+name = "ch4-4-7-2-other-slices"
 version = "0.1.0"
 edition = "2021"
 
