@@ -5,5 +5,5 @@ edition = "2021"
 resolver = "2"
 
 members = [
-    "guessing-game",
+    "guessing-game", "uds-simulator/uds-simulator",
 ]
