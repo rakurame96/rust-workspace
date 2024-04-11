@@ -1,5 +1,5 @@
 [package]
-name = "ch5-1-struct-definition"
+name = "ch5-5-1-struct-definition"
 version = "0.1.0"
 edition = "2021"
 
