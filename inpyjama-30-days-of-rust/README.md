@@ -382,6 +382,17 @@ let hello = &s[0..5];
 let world = &s[6..11];
 ```
 
+**Structure in Rust**
+> A struct is like an objects data attributes
+> ```rust
+> Struct User {
+>    active: bool,
+>    username: String,
+>    email: String,
+>    sign_in_count: u64,
+> }
+> ```
+
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
