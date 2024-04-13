@@ -394,6 +394,12 @@ use std::str;
 let x: [u8; 3] = [b'a', b'b', b'c'];
 let stack_str: &str = str::from_utf8(&x).unwrap();
 ```
+```rust
+use std::str;
+
+let my_string = String::from_string("hello, world!");   // String type
+let my_slice = &my_string[0..5];                        // string literal type
+```
 
 > `String` keeps the buffer and is very practical to use. &str is lightweight and should be used to "look" into strings. You can search, split, parse, and even replace chunks without needing to allocate new memory.
 

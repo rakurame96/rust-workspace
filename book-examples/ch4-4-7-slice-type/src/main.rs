@@ -14,6 +14,14 @@ fn main() {
     println!("string s: {s}");
     // word still has the value 5 here, but there's no more string that we could meaningfully use the value 5 with
     // word is now totally invalid!
+
+// use std::str;
+
+let my_string = String::from("hello, world!");
+let my_slice = &my_string[0..5];
+
+println!("my_string : {}", my_string);
+println!("my_slice : {}", my_slice);
 }
 
 fn first_word(some_string: &String) -> usize {
