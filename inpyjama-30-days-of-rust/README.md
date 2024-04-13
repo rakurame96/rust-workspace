@@ -382,6 +382,25 @@ let hello = &s[0..5];
 let world = &s[6..11];
 ```
 
+**Difference between `String` & `&str`**
+> `String` is the dynamic heap string type, like Vec: use it when you need to own or modify your string data.
+> `str` is an immutable sequence of UTF-8 bytes of dynamic length somewhere in memory. Since the size is unknown, one can only handle it behind a pointer. This means that `str` most commonly appears as `&str`: a reference to some UTF-8 data, normally called a "string slice" or just a "slice". A slice is just a view onto some data, and that data can be anywhere, e.g.
+    > **In static storage:** a string literal "foo" is a &'static str. The data is hardcoded into the executable and loaded into memory when the program runs. 
+    > **Inside a heap allocated String:** String dereferences to a &str view of the String's data.
+    > **On the stack**: e.g. the following creates a stack-allocated byte array, and then gets a view of that data as a &str: 
+```rust
+use std::str;
+
+let x: [u8; 3] = [b'a', b'b', b'c'];
+let stack_str: &str = str::from_utf8(&x).unwrap();
+```
+
+> `String` keeps the buffer and is very practical to use. &str is lightweight and should be used to "look" into strings. You can search, split, parse, and even replace chunks without needing to allocate new memory.
+
+> `&str` can look inside of a String as it can point to some string literal. The following code needs to copy the literal string into the String managed memory: `let a: String = "hello rust".into();`
+
+More information can be found in this [article](https://dev.to/dsysd_dev/string-vs-str-in-rust-understanding-the-fundamental-differences-for-efficient-programming-4og8#:~:text=In%20summary%2C%20%22String%22%20is,and%20requirements%20of%20your%20code.)
+
 **Structure in Rust**
 > A struct is like an objects data attributes
 > ```rust
@@ -392,7 +411,6 @@ let world = &s[6..11];
 >    sign_in_count: u64,
 > }
 > ```
-
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
