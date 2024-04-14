@@ -418,6 +418,22 @@ More information can be found in this [article](https://dev.to/dsysd_dev/string-
 > }
 > ```
 
+**Struct Tuple**
+> Tuple structs are useful when you want to give the whole tuple a name and make the tuple different type from other tuples
+> This makes the naming of each struct fields as in regular struct would be verbose or redundant
+> Tuple struct instances are similar to tuples in that you can destructure them into their individual pieces and we can use a `.` operator followed by index to access an individual value
+
+**Unit-Like Structs**
+> This type of structs don't have any fields
+> It can be useful when you need to implement a trait on some type but don't have any data that you want to store in the type itself
+```rust
+struct AlwaysEqual;
+
+fn main() {
+    let subject = AlwaysEqual;
+}
+```
+
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
 * https://fasterthanli.me/articles/a-half-hour-to-learn-rust
