@@ -434,6 +434,10 @@ fn main() {
 }
 ```
 
+**Ownership of Struct Data**
+> In the User struct definition in Listing 5-1, we used the owned String type rather than the &str string slice type. This is a deliberate choice because we want each instance of this struct to own all of its data and for that data to be valid for as long as the entire struct is valid.
+> It’s also possible for structs to store references to data owned by something else, but to do so requires the use of lifetimes
+
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
 * https://fasterthanli.me/articles/a-half-hour-to-learn-rust
