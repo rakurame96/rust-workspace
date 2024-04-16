@@ -438,6 +438,14 @@ fn main() {
 > In the User struct definition in Listing 5-1, we used the owned String type rather than the &str string slice type. This is a deliberate choice because we want each instance of this struct to own all of its data and for that data to be valid for as long as the entire struct is valid.
 > It’s also possible for structs to store references to data owned by something else, but to do so requires the use of lifetimes
 
+**println!**
+> The println! macro can do many kinds of formatting, and by default, the curly brackets tell println! to use formatting known as Display: output intended for direct end user consumption. The primitive types we’ve seen so far implement **Display Trait** by default because there’s only one way you’d want to show a 1 or any other primitive type to a user.
+> But with structs, the way println! should format the output is less clear because there are more display possibilities: Do you want commas or not? Do you want to print the curly brackets? Should all the fields be shown?
+> The println! macro call will now look like println!("rect1 is {:?}", rect1);. Putting the specifier :? inside the curly brackets tells println!
+we want to use an output format called **Debug Trait**. The Debug trait enables us to print our struct in a way that is useful for developers so we can see its value while we’re debugging our code
+> Another way to print out a value using the Debug format is to use the `dbg!` macro, which takes ownership of an expression (as opposed to println!, which takes a reference), prints the file and line number of where that `dbg!` macro call occurs in your code along with the resultant value of that expression, and returns ownership of the value.
+> Calling the `dbg!` macro prints to the standard error console stream (stderr), as opposed to println!, which prints to the standard output console stream (stdout). 
+
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
 * https://fasterthanli.me/articles/a-half-hour-to-learn-rust
