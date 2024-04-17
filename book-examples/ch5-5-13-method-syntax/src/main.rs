@@ -18,6 +18,13 @@ fn main() {
     rect1.area(), rect1.perimeter()
     );
 
+    let scale = 100;
+    let rect2 = Rectangle {
+        width: 20,
+        height: (scale * 2),
+    };
+    
+    println!("perimeter of rect2: {}", rect2.perimeter());
 }
 
 impl Rectangle{
