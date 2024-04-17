@@ -1,5 +1,5 @@
 [package]
-name = "ch5-5-14-struct-method-param"
+name = "ch5-5-16-multiple-impl-block"
 version = "0.1.0"
 edition = "2021"
 

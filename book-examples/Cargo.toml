@@ -11,5 +11,5 @@ members = [
     "ch3-shadowing",
     "ch3-while",
     "ch4-4-1", "ch4-4-3-ownership", "ch4-4-4-return-values", "ch4-4-5-return-ownership", "ch4-4-6-1-mutable-references", "ch4-4-6-references-borrowing", "ch4-4-7-slice-type",
-    "ch4-4-7-1-string-literal-slices", "ch4-4-7-2-other-slices", "ch5-5-1-struct-definition", "ch5-5-3-change-struct-value", "ch5-5-5-struct-fields-as-args", "ch5-5-7-struct-update", "ch5-5-7-1-struct-tuple", "ch5-5-8-area-rectangle", "ch5-5-12-dervied-traits", "ch5-5-13-method-syntax", "ch5-5-14-struct-method-param",
+    "ch4-4-7-1-string-literal-slices", "ch4-4-7-2-other-slices", "ch5-5-1-struct-definition", "ch5-5-3-change-struct-value", "ch5-5-5-struct-fields-as-args", "ch5-5-7-struct-update", "ch5-5-7-1-struct-tuple", "ch5-5-8-area-rectangle", "ch5-5-12-dervied-traits", "ch5-5-13-method-syntax", "ch5-5-15-struct-method-param", "ch5-5-16-multiple-impl-block",
 ]
