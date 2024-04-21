@@ -446,6 +446,32 @@ we want to use an output format called **Debug Trait**. The Debug trait enables 
 > Another way to print out a value using the Debug format is to use the `dbg!` macro, which takes ownership of an expression (as opposed to println!, which takes a reference), prints the file and line number of where that `dbg!` macro call occurs in your code along with the resultant value of that expression, and returns ownership of the value.
 > Calling the `dbg!` macro prints to the standard error console stream (stderr), as opposed to println!, which prints to the standard output console stream (stdout). 
 
+**Enums**
+> Enums allow you to define a type by enumerating its possible variants.
+> Where structs give you a way of grouping together related fields and data, like a Rectangle with its width and height, enums give you a way of saying a value is one of a possible set of values. 
+> For example, we may want to say that Rectangle is one of a set of possible shapes that also includes Circle and Triangle. To do this, Rust allows us to encode these possibilities as an enum.
+```rust
+// without string argument to enum
+enum IpAddrKind {
+    V4,
+    V6,
+}
+```
+> We can put data directly into each enum variant. This new definition of the IpAddr enum says that both V4 and V6 variants will have associated String values.\
+> We attach data to each variant of the enum directly, so there is no need  for an extra struct.\
+> Here, it’s also easier to see another detail of how enums work:
+> * the name of each enum variant that we define also becomes a function that constructs an instance of the enum. That is, IpAddr::V4() is a function call that takes a String argument and returns an instance of the IpAddr type. We automatically get this constructor function defined as a result of defining the enum. 
+```rust
+// with string argument to enum
+
+// IpAddr::V4()/IpAddr::V6() accepts the String as a input and returns an instance of IpAddr type(V4 or V6)
+enum IpAddrKind {
+    V4(String),
+    V6(String),
+}
+```
+> There is one more similarity between enums and structs: just as we’re able to define methods on structs using impl, we’re also able to define methods on enums
+
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
 * https://fasterthanli.me/articles/a-half-hour-to-learn-rust
@@ -472,3 +498,4 @@ we want to use an output format called **Debug Trait**. The Debug trait enables 
 4. [Writing an OS in Rust](https://os.phil-opp.com/)
 5. https://fasterthanli.me/
 6. [Blog_OS Github Repository](https://github.com/phil-opp/blog_os) - Writing an OS in Rust
+7. [Rust Language Official Documentation](https://doc.rust-lang.org/)
