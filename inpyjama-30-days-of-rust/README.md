@@ -472,6 +472,12 @@ enum IpAddrKind {
 ```
 > There is one more similarity between enums and structs: just as we’re able to define methods on structs using impl, we’re also able to define methods on enums
 
+**`Option` Enum**
+> The Option type encodes the very common scenario in which a value could be something or it could be nothing. 
+> For example, if you request the first item in a list containing multiple items, you would get a value. If you request the first item in an empty list, you would get nothing. 
+> Expressing this concept in terms of the type system means the compiler can check whether you’ve handled all the cases you should be handling; this functionality can prevent bugs that are extremely common in other programming languages.
+> Rust doesn’t have the null feature that many other languages have. Null is a value that means there is no value there. In languages with null, variables can always be in one of two states: null or not-null.
+
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
 * https://fasterthanli.me/articles/a-half-hour-to-learn-rust
