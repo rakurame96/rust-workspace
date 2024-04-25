@@ -477,6 +477,13 @@ enum IpAddrKind {
 > For example, if you request the first item in a list containing multiple items, you would get a value. If you request the first item in an empty list, you would get nothing. 
 > Expressing this concept in terms of the type system means the compiler can check whether you’ve handled all the cases you should be handling; this functionality can prevent bugs that are extremely common in other programming languages.
 > Rust doesn’t have the null feature that many other languages have. Null is a value that means there is no value there. In languages with null, variables can always be in one of two states: null or not-null.
+```rust
+enum Option<T> {
+    None,
+    Some(T),
+}
+```
+> The `<T>` syntax is a feature of Rust, it means a generic type parameter. `<T>` means that the Some variant of the Option enum can hold one piece of data of any type, and that each concrete type that gets used in place of T makes the overall `Option<T>` type a different type.
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
