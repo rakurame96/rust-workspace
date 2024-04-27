@@ -484,7 +484,20 @@ enum Option<T> {
 }
 ```
 > The `<T>` syntax is a feature of Rust, it means a generic type parameter. `<T>` means that the Some variant of the Option enum can hold one piece of data of any type, and that each concrete type that gets used in place of T makes the overall `Option<T>` type a different type.
+> Rust knows that we didn’t cover every possible case, and even knows which pattern we forgot!. 
 > Matches in Rust are exhaustive: we must exhaust every last possibility in order for the code to be valid. Especially in the case of `Option<T>`, when Rust prevents us from forgetting to explicitly handle the None case, it protects us from assuming that we have a value when we might have null, thus making the billion-dollar mistake discussed earlier impossible
+
+**Control Flow with `if let`**
+> The syntax `if let` takes a pattern and an expression separated by an equal sign. It works the same way as a match, where the expression is given to the match and the pattern is its first arm.
+> In this case, the pattern is `Some(max)`, and the max binds to the value inside the Some.
+> Using if let means less typing, less indentation, and less boilerplate code. 
+```rust
+let config_max = Some(3u8);
+if let Some(max) = config_max {
+    println!("The maximum is configured to be {max}");
+}
+`
+``
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
