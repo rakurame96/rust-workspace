@@ -40,6 +40,21 @@ cargo update
 cargo doc --open
 ```
 
+#### to create a library crate with git initialized
+```shell
+cargo new restaurant --lib
+```
+
+#### to create a library crate without git initialization
+```shell
+cargo new restaurant --lib --vcs none
+```
+
+#### to format code using rustfmt
+```shell
+rustfmt <.\file_name.rs>
+```
+
 > **_NOTE: Ruslings Commands_**
 Commands available to you in watch mode:
   * `hint`   - prints the current exercise's hint
@@ -509,11 +524,32 @@ if let Some(max) = config_max {
     > - **Modules and use:** Let you control the organization, scope, and privacy of paths
     > - **Paths:** A way of naming an item, such as a struct, function, or module
 
-> **2 Types of Crates:** A crate can come in one of two forms: 
+> *2 Types of Crates:** A crate can come in one of two forms: 
     > - **Binary Crates:** Binary crates are programs you can compile to an executable that you can run, such as a command line program or a server. Each must have a function called main that defines what happens when the executable runs. All the crates we’ve created so far have been binary crates.
     > - **Library Crate:** Library crates don’t have a main function, and they don’t compile to an executable. Instead, they define functionality intended to be shared with multiple projects (for example: rand crate).
     
-> **Package:** A package is a bundle of one or more crates that provides a set of functionality. A package contains a Cargo.toml file that describes how to build those crates. **Crate** itself is a package, that contains the binary crate for the command line tool you’ve been using to build your code.
+> **Package:** A package is a bundle of one or more crates that provides a set of functionality. A package contains a Cargo.toml file that describes how to build those crates. **Crate** itself is a package, that contains the binary crate for the command line tool you’ve been using to build your code. 
+
+> **Modules:** Modules let us organize code within a crate for readability and easy reuse. Modules also allow us to control the privacy of items because code within a module is private by default. Private items are internal implementation details not available for outside use. We can choose to make modules and the items within them public, which exposes them to allow external code to use and depend on them
+> We define a module with the mod keyword followed by the name of the module. Inside modules we can place other modules as well
+> Modules can also hold definitions for other items, such as structs, enums, constants, traits, etc.
+> By using modules, we can group related definitions together and name why they’re related. Programmers using this code can navigate the code based on the groups rather than having to read through all the definitions, making it easier to find the definitions relevant to them. Programmers adding new functionality to this code would know where to place the code to keep the program organized.
+```rust
+// mod <mod_name>
+
+mod front_of_house {
+    mod hosting {
+        // ...
+        // ...
+    }
+
+    mod serving {
+        // ...
+        // ...
+    }
+}
+```
+
 
 **Note:** 
 - A package can contain as many binary crates as you like, but at most only one library crate. 
@@ -525,7 +561,6 @@ library or binary.
 - Here, we have a package that only contains src/main.rs, meaning it only contains a binary crate named my-project. If a package contains src/main.rs and src/lib.rs, it has two crates: a binary and a library, both with the same name as the package. 
 - A package can have multiple binary crates by placing 
 files in the src/bin directory: each file will be a separate binary crate.
-
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
