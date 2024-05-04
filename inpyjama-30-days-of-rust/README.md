@@ -527,7 +527,9 @@ if let Some(max) = config_max {
 > *2 Types of Crates:** A crate can come in one of two forms: 
     > - **Binary Crates:** Binary crates are programs you can compile to an executable that you can run, such as a command line program or a server. Each must have a function called main that defines what happens when the executable runs. All the crates we’ve created so far have been binary crates.
     > - **Library Crate:** Library crates don’t have a main function, and they don’t compile to an executable. Instead, they define functionality intended to be shared with multiple projects (for example: rand crate).
-    
+
+> **Crate:** A crate is the smallest amount of code that the Rust compiler considers at a time. Even if you run rustc rather than cargo and pass a single source code file. Crates can contain modules, and the modules may be defined in other files that get compiled with the crate.
+
 > **Package:** A package is a bundle of one or more crates that provides a set of functionality. A package contains a Cargo.toml file that describes how to build those crates. **Crate** itself is a package, that contains the binary crate for the command line tool you’ve been using to build your code. 
 
 > **Modules:** Modules let us organize code within a crate for readability and easy reuse. Modules also allow us to control the privacy of items because code within a module is private by default. Private items are internal implementation details not available for outside use. We can choose to make modules and the items within them public, which exposes them to allow external code to use and depend on them
@@ -553,6 +555,22 @@ mod front_of_house {
 **Paths:** A path can take two forms:
 - An **absolute path** is the full path starting from a crate root; for code from an external crate, the absolute path begins with the crate name, and for code from the current crate, it starts with the literal crate.
 - A **relative path** starts from the current module and uses self, super, or an identifier in the current module
+
+**Declaring modules** In the crate root file, you can declare new modules; say you declare a “garden” module with mod garden;. The compiler will look for the module’s code in these places:
+- Inline, within curly brackets that replace the semicolon following mod garden
+- In the file src/garden.rs
+- In the file src/garden/mod.rs
+
+**Declaring submodules** In any file other than the crate root, you can declare submodules. For example, you might declare mod vegetables; in src/garden.rs. The compiler will look for the submodule’s code within the directory named for the parent module in these places:
+- Inline, directly following mod vegetables, within curly brackets instead of the semicolon
+- In the file src/garden/vegetables.rs
+- In the file src/garden/vegetables/mod.r
+
+**Private vs. public** Code within a module is private from its parent modules by default. To make a module public, declare it with pub mod instead of mod. To make items within a public module public as well, use pub before their declarations.
+
+**Paths to code in modules** Once a module is part of your crate, you can refer to code in that module from anywhere else in that same crate, as long as the privacy rules allow, using the path to the code. For example, an Asparagus type in the garden vegetables module would be found at crate::garden::vegetables::Asparagus.
+
+**The use keyword** Within a scope, the use keyword creates shortcuts to items to reduce repetition of long paths. In any scope that can refer to crate::garden::vegetables::Asparagus, you can create a shortcut with use crate::garden::vegetables::Asparagus; and from then on you only need to write Asparagus to make use of that type in the scope.
 
 **Note:** 
 - A package can contain as many binary crates as you like, but at most only one library crate. 
