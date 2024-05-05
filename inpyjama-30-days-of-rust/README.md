@@ -536,6 +536,8 @@ if let Some(max) = config_max {
 > We define a module with the mod keyword followed by the name of the module. Inside modules we can place other modules as well
 > Modules can also hold definitions for other items, such as structs, enums, constants, traits, etc.
 > By using modules, we can group related definitions together and name why they’re related. Programmers using this code can navigate the code based on the groups rather than having to read through all the definitions, making it easier to find the definitions relevant to them. Programmers adding new functionality to this code would know where to place the code to keep the program organized.
+> The module tree might remind you of the filesystem’s directory tree on your computer; this is a very apt comparison! Just like directories in a filesystem, you use modules to organize your code. And just like files in a directory, we need a way to find our modules.
+
 ```rust
 // mod <mod_name>
 
