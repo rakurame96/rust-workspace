@@ -585,6 +585,21 @@ library or binary.
 - A package can have multiple binary crates by placing 
 files in the src/bin directory: each file will be a separate binary crate.
 
+**Collections in Rust**
+- Most other data types represent one specific value, but collections can contain multiple values.
+- Collections stored in heap memory and its size doesn't need to be known at compile time. 
+- Can grow and shrink during the runtime of the program
+- 3 different types of collection in rust
+    - **Vector** - allows you to store a variable number of values next to each other
+    - **String** - is a collection of characters
+    - **Hash Map** - allows you to associate a value with a specific key. It’s a particular implementation of the more general data structure called a **map**
+
+**Vector**
+- Vectors allow you to store more than one value in a single data structure that puts all the values next to each other in memory. Vectors can only store values of the same type. 
+- *Example:* They are useful when you have a list of items, such as the lines of text in a file or the prices of items in a shopping cart.
+- Vectors are implemented using generics.
+- Declaration of vector `Vec<T>`
+
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
 * https://fasterthanli.me/articles/a-half-hour-to-learn-rust
