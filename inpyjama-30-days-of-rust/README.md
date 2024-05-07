@@ -602,6 +602,36 @@ files in the src/bin directory: each file will be a separate binary crate.
     - Empty Vector of `<i32>` type `let v: Vec<i32> = Vec::new();`
     - Alternatively, we can skip mentioning the type inside angle brackets(<>) `let v = vec![1, 2, 3];`
     - Both the above vector definitions are valid. In method 1, we are explicitly mentioning the type of data we're going to store and in method 2 the `vec!` macro, which will create a new vector that holds the values you give it. The integer type is i32 because that’s the default integer type of Rust.
+- **Read Elements of Vector** 
+    - 2 methods to reference a value stored in a vector:
+        - via indexing
+        - via `get` method
+    - **indexing**
+        - Below is the example code snippet to reference a value stored in a vector using **indexing** method
+        ```rust
+        let third: &i32 = &v[2];
+        println!("The third element is {third}");
+        ```
+        - We use the index value of 2 to get the third element 1 because vectors are indexed by number, starting at zero. Using `&` and `[]` gives us a reference to the element at the index value.
+        - ```rust
+            let does_not_exist = &v[100];
+            ```
+        - When we run the above code, the first `[]` method will cause the program to panic because it references a nonexistent element. This method is best used **when you want your program to crash if there’s an attempt to access an element past the end of the vecto**r.
+
+    - **`get` method**
+        - Below code snippet can be used to reference a value stored in a vector using the `get` method
+        ```rust
+        let third: Option<&i32> = v.get(2);
+        match third {
+            Some(third) => println!("The third element is {third}"),
+            None => println!("There is no third element."),
+        }
+        ```
+        - When we use the `get` method with the index passed as an argument, we get an `Option<&T>` that we can use with match.
+        - ```rust
+            let does_not_exist = v.get(100);
+            ```
+        - When the get method is passed an index that is outside the vector, it returns None without panicking. You would use this method if accessing an element beyond the range of the vector may happen occasionally under normal circumstances. Your code will then have logic to handle having either `Some(&element)` or `None` as discussed earlier
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
