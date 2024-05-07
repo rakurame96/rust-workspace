@@ -598,7 +598,10 @@ files in the src/bin directory: each file will be a separate binary crate.
 - Vectors allow you to store more than one value in a single data structure that puts all the values next to each other in memory. Vectors can only store values of the same type. 
 - *Example:* They are useful when you have a list of items, such as the lines of text in a file or the prices of items in a shopping cart.
 - Vectors are implemented using generics.
-- Declaration of vector `Vec<T>`
+    - Declaration of vector `Vec<T>`
+    - Empty Vector of `<i32>` type `let v: Vec<i32> = Vec::new();`
+    - Alternatively, we can skip mentioning the type inside angle brackets(<>) `let v = vec![1, 2, 3];`
+    - Both the above vector definitions are valid. In method 1, we are explicitly mentioning the type of data we're going to store and in method 2 the `vec!` macro, which will create a new vector that holds the values you give it. The integer type is i32 because that’s the default integer type of Rust.
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
