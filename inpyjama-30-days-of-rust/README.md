@@ -602,10 +602,12 @@ files in the src/bin directory: each file will be a separate binary crate.
     - Empty Vector of `<i32>` type `let v: Vec<i32> = Vec::new();`
     - Alternatively, we can skip mentioning the type inside angle brackets(<>) `let v = vec![1, 2, 3];`
     - Both the above vector definitions are valid. In method 1, we are explicitly mentioning the type of data we're going to store and in method 2 the `vec!` macro, which will create a new vector that holds the values you give it. The integer type is i32 because that’s the default integer type of Rust.
+
 - **Read Elements of Vector** 
     - 2 methods to reference a value stored in a vector:
         - via indexing
         - via `get` method
+
     - **indexing**
         - Below is the example code snippet to reference a value stored in a vector using **indexing** method
         ```rust
@@ -632,6 +634,33 @@ files in the src/bin directory: each file will be a separate binary crate.
             let does_not_exist = v.get(100);
             ```
         - When the get method is passed an index that is outside the vector, it returns None without panicking. You would use this method if accessing an element beyond the range of the vector may happen occasionally under normal circumstances. Your code will then have logic to handle having either `Some(&element)` or `None` as discussed earlier
+- Dropping a vector also drops its associated elements
+    ```rust
+    {
+        let v = vec![1, 2, 3, 4];
+        // do stuff with v
+    } // <- v goes out of scope and is freed here
+    ```
+- When the vector gets dropped, all of its contents are also dropped, meaning the integers it holds will be cleaned up. The borrow checker ensures that any references to contents of a vector are only used while the vector itself is valid
+
+**Strings**
+- Strings being a more complicated data structure than many, programmers give them credit for, and UTF-8. 
+- Strings are implemented as a collection of bytes, plus some methods to provide useful functionality when those bytes are interpreted as text. 
+- Rust has only one string type in the core language, which is the string slice str that is usually seen in its borrowed form &str. 
+- When Rustaceans refer to “strings” in Rust, they might be referring to either the String or the string slice &str types, not just one of those types.
+- Both String and string slices are UTF-8 encoded.
+    - **Capabilities**
+        - Many of the same operations available with `Vec<T>` are available with String as well because String is actually implemented as a wrapper around a vector of bytes with some extra guarantees, restrictions, and capabilities. 
+        - Creating string by using the `new()` method. Ex: `let mut s = String::new();`
+        - `to_string()` method used to convert the string literal to the `String` method.
+            - ```rust
+                let data = "initial contents";
+                let s = data.to_string();
+                // The method also works on a literal directly:
+                let s = "initial contents".to_string();
+              ```
+        - We can also use `from()` method to pass the string literal as input. Ex: `let s = String::from("initial contents");`
+
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
