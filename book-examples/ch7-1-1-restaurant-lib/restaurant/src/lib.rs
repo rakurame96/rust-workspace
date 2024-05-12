@@ -1,3 +1,4 @@
+#[allow(unused)]
 mod front_of_house {
     pub mod hosting {
         pub fn add_to_waitlist() {}
@@ -13,6 +14,7 @@ mod front_of_house {
     }
 }
 
+#[allow(unused)]
 mod back_of_house {
     pub enum Appetizer {
         Soup,
@@ -46,6 +48,7 @@ fn deliver_order() {}
 use crate::front_of_house::hosting;
 // use front_of_house::hosting;      // still works though
 
+#[allow(unused)]
 pub fn eat_at_restaurant() {
     // Absolute path
     // crate::front_of_house::hosting::add_to_waitlist();      // instead of using complete path, we can bring the hosting into scope by use keyword

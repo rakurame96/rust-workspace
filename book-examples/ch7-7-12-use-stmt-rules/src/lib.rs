@@ -1,3 +1,4 @@
+#[allow(unused)]
 mod front_of_house {
     pub mod hosting {
         pub fn add_to_waitlist() {}
@@ -13,6 +14,7 @@ mod front_of_house {
     }
 }
 
+#[allow(unused)]
 mod back_of_house {
     pub enum Appetizer {
         Soup,
@@ -46,6 +48,8 @@ fn deliver_order() {}
 // use crate::front_of_house::hosting;
 // use front_of_house::hosting;      // still works though
 
+#[allow(unused_variables)]
+#[allow(unused)]
 mod customer {  // here above use statement becomes invalid. Need to put use inside mod customer
     // bring the crate into scope
     use crate::front_of_house::hosting;

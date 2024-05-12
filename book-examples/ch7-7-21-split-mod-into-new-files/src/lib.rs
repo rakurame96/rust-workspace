@@ -1,5 +1,4 @@
 mod front_of_house;
-    
 
 mod back_of_house {
     pub enum Appetizer {
@@ -7,6 +6,7 @@ mod back_of_house {
         Salad,
     }
 
+    #[allow(unused)]
     pub struct Breakfast {
         pub toast: String,
         seasonal_fruit: String,
@@ -20,11 +20,14 @@ mod back_of_house {
             }
         }
     }
-
+    
+    #[allow(unused)]
     fn fix_incorrect_order() {
         cook_order();
         super::deliver_order(); // checks the crate root file for deliver_order() function implementation
     }
+    
+    #[allow(unused)]
     fn cook_order() {}
 }
 
@@ -38,6 +41,7 @@ fn deliver_order() {}
 use crate::front_of_house::hosting;
 use crate::back_of_house::{Breakfast, Appetizer};   // breakfast is struct & Appetizer is an Enum
     
+#[allow(unused_variables)]
 pub fn eat_at_restaurant() {
     // crate::front_of_house::hosting::add_to_waitlist();      // instead of using complete path, we can bring the hosting into scope by use keyword
     hosting::add_to_waitlist();
