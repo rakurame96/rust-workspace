@@ -660,6 +660,11 @@ files in the src/bin directory: each file will be a separate binary crate.
                 let s = "initial contents".to_string();
               ```
         - We can also use `from()` method to pass the string literal as input. Ex: `let s = String::from("initial contents");`
+        - We can use push_str method to append a string slice `push_str("bar")`
+            - ```rust
+                let mut s = String::from("foo");
+                s.push_str("bar");
+              ```
 
 
 # Interesting Articles to read

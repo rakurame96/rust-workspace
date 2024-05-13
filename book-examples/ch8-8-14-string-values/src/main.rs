@@ -1,3 +1,4 @@
+#[allow(unused_variables)]
 fn main() {
     let hello = String::from("عليكم السالم");
     let hello = String::from("Dobrý den");
