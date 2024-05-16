@@ -665,7 +665,35 @@ files in the src/bin directory: each file will be a separate binary crate.
                 let mut s = String::from("foo");
                 s.push_str("bar");
               ```
+        - Indexing of string is strictly not allowed by Rust 
+        - In many other programming languages, accessing individual characters in a string by referencing them by index is a valid and common operation. However, if you try to access parts of a String using indexing syntax in Rust, you’ll get an error
+        - Since Rust supports UTF-8 data format, wider support for emoji, other languages like Hindi, etc. Because of this, unicode never be 1 byte value like ASCII format. 
+            - ```rust
+                // size of string is 4 as it is ASCII character
+                let hello = String::from("Hola");
 
+                // size of below string is 24 not 12 as these characters are not defined in the ASCII
+                // unicode character set
+                let hello = String::from("Здравствуйте");
+              ```
+
+**Hash Maps**
+- The type `HashMap<K, V>` stores a mapping of keys of type K to values of type V using a hashing function, which determines how it places these keys and values into memory. 
+- Other common names of Hash Maps is ***hash, map, object, hash table, dictionary, or associative array***
+- Hash maps are useful when you want to look up data not by using an index, as you can with vectors, but by using a key that can be of any type. 
+- Hash map has to be explicitly brought into scope by adding this line `use std::collections::HashMap;`
+    **Hash Maps and Ownership**
+    - For types that implement the Copy trait, like i32, the values are copied into the hash map. 
+    - For owned values like String, the values will be moved and the hash map will be the owner of those values
+    - ```rust
+        use std::collections::HashMap;
+        let field_name = String::from("Favorite color");
+        let field_value = String::from("Blue");
+        let mut map = HashMap::new();
+        map.insert(field_name, field_value);
+        // field_name and field_value are invalid at this point, try
+        // using them and see what compiler error you get!
+      ```
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
