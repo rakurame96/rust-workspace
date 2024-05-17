@@ -41,5 +41,13 @@ A small selection of other guides and tutorial for Rust:
 - [Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/): in-depth exploration of Rust's memory management rules, through implementing a few different types of list structures.
 - [Rustonomicon Book](https://doc.rust-lang.org/nomicon/intro.html)
 - [Rust Books Reference](https://github.com/sger/RustBooks?tab=readme-ov-file#starter-books)
+- [Rust-for-Linux](https://rust-for-linux.com/)
+
+## Online Articles
+- [Rust-Macros](https://earthly.dev/blog/rust-macros/)
+- [The Four Horsemen of Bad Rust Code](https://fosdem.org/2024/schedule/event/fosdem-2024-2434-the-four-horsemen-of-bad-rust-code/)
+- [Long-term Rust Project Maintenance](https://corrode.dev/blog/long-term-rust-maintenance/)
+- [Rust 1.78: Performance Impact of the 128-bit Memory Alignment Fix](https://codspeed.io/blog/rust-1-78-performance-impact-of-the-128-bit-memory-alignment-fix)
+
 
 Please see the [Little Book of Rust Books](https://lborb.github.io/book/) for even more Rust books.
