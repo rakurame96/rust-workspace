@@ -694,6 +694,11 @@ files in the src/bin directory: each file will be a separate binary crate.
         // field_name and field_value are invalid at this point, try
         // using them and see what compiler error you get!
       ```
+    - **Update hashmap values**
+        - Calling `insert()` method with same key but different value will overwrite/replace the old value
+        - Add an Key-Value pair in the map only when the key is not present. This can be done using the method called `entry()` with `or_insert()`
+            - The `or_insert` method on `Entry` is defined to return a mutable reference to the value for the corresponding Entry key if that key exists, and if not, it inserts the parameter as the new value for this key and returns a mutable reference to the new value.
+
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
