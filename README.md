@@ -49,5 +49,14 @@ A small selection of other guides and tutorial for Rust:
 - [Long-term Rust Project Maintenance](https://corrode.dev/blog/long-term-rust-maintenance/)
 - [Rust 1.78: Performance Impact of the 128-bit Memory Alignment Fix](https://codspeed.io/blog/rust-1-78-performance-impact-of-the-128-bit-memory-alignment-fix)
 
+## Rust Books Recommendation
+- Claus Matzinger • Learn Rust Programming • https://amzn.to/3PeN0Fx
+- Tim McNamara • Rust in Action • https://amzn.to/3ux2R9u
+- Brenden Matthews • Code Like a Pro in Rust • https://amzn.to/3LFAyy9
+- Prabhu Eshwarla • Rust Servers, Services & Apps • https://amzn.to/3yV13br
+- Bastian Gruber • Rust Web Development • https://amzn.to/3lquaQX
+- Blandy, Orendorff & Tindall • Programming Rust • https://amzn.to/3x7r6w6
+- Ken Youens-Clark • Command-Line Rust • https://amzn.to/3PQZ539
+- Kevin Hoffman • Programming WebAssembly with Rust • https://amzn.to/3x3brhe
 
 Please see the [Little Book of Rust Books](https://lborb.github.io/book/) for even more Rust books.
