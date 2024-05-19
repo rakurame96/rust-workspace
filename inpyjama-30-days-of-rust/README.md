@@ -699,6 +699,41 @@ files in the src/bin directory: each file will be a separate binary crate.
         - Add an Key-Value pair in the map only when the key is not present. This can be done using the method called `entry()` with `or_insert()`
             - The `or_insert` method on `Entry` is defined to return a mutable reference to the value for the corresponding Entry key if that key exists, and if not, it inserts the parameter as the new value for this key and returns a mutable reference to the new value.
 
+**Errors in Rust**
+- Errors are a fact of life in software, so Rust has a number of features for handling situations in which something goes wrong. In many cases, Rust requires you to acknowledge the possibility of an error and take some action before your code will compile. This requirement makes your program more robust by ensuring that you’ll discover errors and handle them appropriately before deploying your code to production!
+- Rust doesn’t have exceptions like most other languages do. 
+- Two major error categories in Rust are
+    - **Recoverble** Error
+        - For example, in the case *file not found* error, we just need to report the error to the user and retry the operation again
+        - Type `Result<T, E>` can be used for recoverable errors
+    - **Unrecoverable** Error
+        - For example, it is a symptoms of potential bugs in the code. Trying to access a location beyond the end of an array, and so we want to immediately stop the program.
+        - `panic!` macro that stops execution when the program encounters an unrecoverable error
+
+    **Unrecoverable Errors with panic!**
+    - Sometimes bad things happen in your code, and there’s nothing you can do about it. Rust has the `panic!` macro.
+    - Two ways to cause `panic!`:
+        - by taking an action that causes our code to panic (such as accessing an array past the end)
+        - by explicitly calling the `panic!` macro
+    - Rust panics will display the failure message to the user and unwind, clean up the stack and quit the program 
+    - In C, attempting to read beyond the end of a data structure is undefined behavior. You might get whatever is at the location in memory that would correspond to that element in the data structure, even though the memory doesn’t belong to that structure. This is called a ***buffer overread*** and can lead to security vulnerabilities if an attacker is able to manipulate the index in such a way as to read data they shouldn’t be allowed to that is stored after the data structure.
+    - A ***backtrace*** is a list of all the functions that have been called to get to this point. Backtraces in Rust work as they do in other languages: 
+        - the key to reading the backtrace is to start from the top and read until you see files you wrote. That’s the spot where the problem originated. 
+            - The lines above that spot are code that your code has called; 
+            - the lines below are code that called your code. 
+        - These before-and-after lines might include core Rust code, standard library code, or crates that you’re using. 
+    
+    **Recoverable Errors with Result**
+    - As some errors aren't serious enough to require the program to stop entirely. For example, when a function fails it’s for a reason that you can easily interpret and respond to. For example, if you try to open a file and that operation fails because the file doesn’t exist, you might want to create the file instead of terminating the process.
+    - ```rust
+      enum Result<T, E> {
+          Ok(T),
+          Err(E),
+      }
+      ```
+    - `T` represents the type of the value that will be returned in the success case within the `Ok` variant.
+    - `E` represents the type of error that will be returned in a failure case within the `Err` variant.
+    - `Result` has these generic type parameters, we can use the Result type and the functions defined on it in many different situations where the success value and error value we want to return may differ.
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
