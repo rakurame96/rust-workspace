@@ -734,6 +734,19 @@ files in the src/bin directory: each file will be a separate binary crate.
     - `T` represents the type of the value that will be returned in the success case within the `Ok` variant.
     - `E` represents the type of error that will be returned in a failure case within the `Err` variant.
     - `Result` has these generic type parameters, we can use the Result type and the functions defined on it in many different situations where the success value and error value we want to return may differ.
+    - `Result` enum and its variant are brought into scope by the prelude so we don't need to specify `Result::` before the `Ok` & `Err` variants in the match arms
+    - `unwrap_or_else()`, `unwrap()`, `expect()` method 
+        - `unwrap()`-> If the Result value is the Ok variant, `unwrap` will return the value inside the `Ok`. If the Result is the `Err` variant, `unwrap` will call the `panic!` macro for us.
+        - `expect` ->  `expect` method lets us also choose the `panic!` error message
+            - ```rust
+               use std::fs::File;
+               fn main() {
+                   let greeting_file = File::open("hello.txt")
+                   .expect("hello.txt should be included in this project");
+               }
+              ```
+            - We use `expect` in the same way as `unwrap`: to return the file handle or call the `panic!` macro. The error message used by expect in its call to `panic!` will be the parameter that we pass to `expect`, rather than the default `panic!` message that unwrap uses
+
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
