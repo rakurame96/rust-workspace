@@ -747,6 +747,9 @@ files in the src/bin directory: each file will be a separate binary crate.
               ```
             - We use `expect` in the same way as `unwrap`: to return the file handle or call the `panic!` macro. The error message used by expect in its call to `panic!` will be the parameter that we pass to `expect`, rather than the default `panic!` message that unwrap uses
 
+    **Propagating Errors**
+    - When a function’s implementation calls something that might fail, instead of handling the error within the function itself, you can return the error to the calling code so that it can decide what to do. This is known as ***propagating*** the error and gives more control to the calling code, where there might be more information or logic that dictates how the error should be handled than what you have available in the context of your code.
+    - The `?` placed after a `Result` value is defined to work in almost the same way as the match expressions we defined to handle the `Result` values.  If the value of the `Result` is an `Ok`, the value inside the Ok will get returned from this expression, and the program will continue. If the value is an `Err`, the `Err` will be returned from the whole function as if we had used the return keyword so the error value gets propagated to the calling code.
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
