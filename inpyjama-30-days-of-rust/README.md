@@ -749,8 +749,12 @@ files in the src/bin directory: each file will be a separate binary crate.
 
     **Propagating Errors**
     - When a function’s implementation calls something that might fail, instead of handling the error within the function itself, you can return the error to the calling code so that it can decide what to do. This is known as ***propagating*** the error and gives more control to the calling code, where there might be more information or logic that dictates how the error should be handled than what you have available in the context of your code.
+    - The code that calls this code will then handle getting either an Ok value that contains a username or an Err value that contains an io::Error. It’s up to the calling code to decide what to do with those values. If the calling code gets an Err value, it could call panic! and crash the program, use a default username, or look up the username from somewhere other than a file, for example
     - The `?` placed after a `Result` value is defined to work in almost the same way as the match expressions we defined to handle the `Result` values.  If the value of the `Result` is an `Ok`, the value inside the Ok will get returned from this expression, and the program will continue. If the value is an `Err`, the `Err` will be returned from the whole function as if we had used the return keyword so the error value gets propagated to the calling code.
-
+    - There is a difference between what the `match` expression does and what the `?` operator does: error values that have the `?` operator called on them go through the `from` function, defined in the `From` trait in the standard library, which is used to convert values from one type into another.
+    - When the `?` operator calls the `from` function, the error type received is converted into the error type defined in the return type of the current function. This is useful when a function returns one error type to represent all the ways a function might fail, even if parts might fail for many different reasons.
+    - `File::open("hello.txt").read_to_string(&mut username)` can be shorthand `fs::read_to_string("hello.txt")`
+    
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
 * https://fasterthanli.me/articles/a-half-hour-to-learn-rust
