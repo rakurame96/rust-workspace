@@ -754,6 +754,8 @@ files in the src/bin directory: each file will be a separate binary crate.
     - There is a difference between what the `match` expression does and what the `?` operator does: error values that have the `?` operator called on them go through the `from` function, defined in the `From` trait in the standard library, which is used to convert values from one type into another.
     - When the `?` operator calls the `from` function, the error type received is converted into the error type defined in the return type of the current function. This is useful when a function returns one error type to represent all the ways a function might fail, even if parts might fail for many different reasons.
     - `File::open("hello.txt").read_to_string(&mut username)` can be shorthand `fs::read_to_string("hello.txt")`
+    - `Box<dyn Error>` means *any kind of error*. Using `?` on a `Result` value in a `main` function with the error type `Box<dyn Error` is allowed because it allowed any `Err` value to be returned early.
+    - When a main function returns a `Result<(), E>`, the executable will exit with a value of 0 if `main` returns `Ok(())` and will exit with a nonzero value if main returns an `Err` value. *Executables written in C return integers when they exit: programs that exit successfully return the integer 0, and programs that error return some integer other than 0.* Rust also returns integers from executables to be compatible with this convention.
     
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
