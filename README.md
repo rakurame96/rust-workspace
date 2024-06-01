@@ -42,6 +42,7 @@ A small selection of other guides and tutorial for Rust:
 - [Rustonomicon Book](https://doc.rust-lang.org/nomicon/intro.html)
 - [Rust Books Reference](https://github.com/sger/RustBooks?tab=readme-ov-file#starter-books)
 - [Rust-for-Linux](https://rust-for-linux.com/)
+- [100 Exercises To Learn Rust](https://rust-exercises.com/)
 
 ## Online Articles
 - [Rust-Macros](https://earthly.dev/blog/rust-macros/)
