@@ -43,6 +43,9 @@ A small selection of other guides and tutorial for Rust:
 - [Rust Books Reference](https://github.com/sger/RustBooks?tab=readme-ov-file#starter-books)
 - [Rust-for-Linux](https://rust-for-linux.com/)
 - [100 Exercises To Learn Rust](https://rust-exercises.com/)
+- [Rust-Advanced-Testing-Workshop](https://github.com/mainmatter/rust-advanced-testing-workshop)
+- [awesome-rust](https://github.com/rust-unofficial/awesome-rust)
+- [Let's Get Rusty - Rust Resources](https://letsgetrusty.kartra.com/page/XDk8)
 
 ## Online Articles
 - [Rust-Macros](https://earthly.dev/blog/rust-macros/)
