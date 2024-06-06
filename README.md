@@ -46,6 +46,7 @@ A small selection of other guides and tutorial for Rust:
 - [Rust-Advanced-Testing-Workshop](https://github.com/mainmatter/rust-advanced-testing-workshop)
 - [awesome-rust](https://github.com/rust-unofficial/awesome-rust)
 - [Let's Get Rusty - Rust Resources](https://letsgetrusty.kartra.com/page/XDk8)
+- [Mainmatter's 100 day's to Rust](https://github.com/mainmatter/100-exercises-to-learn-rust)
 
 ## Online Articles
 - [Rust-Macros](https://earthly.dev/blog/rust-macros/)
