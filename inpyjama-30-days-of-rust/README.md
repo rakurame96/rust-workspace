@@ -756,6 +756,9 @@ files in the src/bin directory: each file will be a separate binary crate.
     - `File::open("hello.txt").read_to_string(&mut username)` can be shorthand `fs::read_to_string("hello.txt")`
     - `Box<dyn Error>` means *any kind of error*. Using `?` on a `Result` value in a `main` function with the error type `Box<dyn Error` is allowed because it allowed any `Err` value to be returned early.
     - When a main function returns a `Result<(), E>`, the executable will exit with a value of 0 if `main` returns `Ok(())` and will exit with a nonzero value if main returns an `Err` value. *Executables written in C return integers when they exit: programs that exit successfully return the integer 0, and programs that error return some integer other than 0.* Rust also returns integers from executables to be compatible with this convention.
+
+    **To panic! or Not to panic!**
+    - When code panics, there’s no way to recover. You could call `panic!` for any error situation, whether there’s a possible way to recover or not, but then you’re making the decision that a situation is unrecoverable on behalf of the calling code. When you choose to return a `Result` value, you give the calling code options. The calling code could choose to attempt to recover in a way that’s appropriate for its situation, or it could decide that an `Err` value in this case is unrecoverable, so it can call `panic!` and turn your recoverable error into an unrecoverable one. Therefore, returning Result is a good default choice when you’re defining a function that might fail.
     
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
