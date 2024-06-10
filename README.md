@@ -53,6 +53,9 @@ A small selection of other guides and tutorial for Rust:
 - [The Four Horsemen of Bad Rust Code](https://fosdem.org/2024/schedule/event/fosdem-2024-2434-the-four-horsemen-of-bad-rust-code/)
 - [Long-term Rust Project Maintenance](https://corrode.dev/blog/long-term-rust-maintenance/)
 - [Rust 1.78: Performance Impact of the 128-bit Memory Alignment Fix](https://codspeed.io/blog/rust-1-78-performance-impact-of-the-128-bit-memory-alignment-fix)
+- [How to build a plugin system in Rust](https://www.arroyo.dev/blog/rust-plugin-systems)
+- [RUST TYPESTATE PATTERN](https://developerlife.com/2024/05/28/typestate-pattern-rust/)
+- []()
 
 ## Rust Books Recommendation
 - Claus Matzinger • Learn Rust Programming • https://amzn.to/3PeN0Fx

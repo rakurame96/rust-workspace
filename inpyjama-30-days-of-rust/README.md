@@ -759,6 +759,8 @@ files in the src/bin directory: each file will be a separate binary crate.
 
     **To panic! or Not to panic!**
     - When code panics, there’s no way to recover. You could call `panic!` for any error situation, whether there’s a possible way to recover or not, but then you’re making the decision that a situation is unrecoverable on behalf of the calling code. When you choose to return a `Result` value, you give the calling code options. The calling code could choose to attempt to recover in a way that’s appropriate for its situation, or it could decide that an `Err` value in this case is unrecoverable, so it can call `panic!` and turn your recoverable error into an unrecoverable one. Therefore, returning Result is a good default choice when you’re defining a function that might fail.
+
+    - [Rust error handling: Option & Result](https://bitfieldconsulting.com/posts/rust-errors-option-result)
     
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
