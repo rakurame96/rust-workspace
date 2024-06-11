@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="EMPTY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch10-10-1-largest-number/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch10-10-2-largest-number-2-lists/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch10-10-3-largest-number-fnc/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch10-10-4-largest-generic-type/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch10-10-5-largest-generic-T-type/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch3-conditions/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch3-constants/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch3-datatypes/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch3-for/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch3-functions/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch3-loop-1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch3-shadowing/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch3-while/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch4-4-1/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch4-4-3-ownership/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch4-4-4-return-values/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch4-4-5-return-ownership/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch4-4-6-1-mutable-references/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch4-4-6-references-borrowing/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch4-4-7-1-string-literal-slices/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch4-4-7-2-other-slices/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch4-4-7-slice-type/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch5-5-1-struct-definition/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch5-5-12-dervied-traits/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch5-5-13-method-syntax/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch5-5-15-struct-method-param/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch5-5-16-multiple-impl-block/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch5-5-3-change-struct-value/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch5-5-5-struct-fields-as-args/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch5-5-7-1-struct-tuple/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch5-5-7-struct-update/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch5-5-8-area-rectangle/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch6-6-1-enum-example/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch6-6-3-enum-match/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch6-6-4-enum-bind-values/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch6-6-5-enum-option-exp/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch6-6-6-if-let/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch7-1-1-restaurant-lib/restaurant/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch7-7-12-use-stmt-rules/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch7-7-16-new-names-as-kywd/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch7-7-21-split-mod-into-new-files/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch8-8-14-string-values/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch8-8-16-string-slices/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch8-8-18-string-concat/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch8-8-20-create-hash-map/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch8-8-21-access-hash-map/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch8-8-22-hash-map-ownership/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch8-8-25-hash-map-value-update/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch8-8-3-vectors/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch8-8-4-vector-read-elements/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch8-8-6-vector-mut-immut-borrow/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch8-8-8-vector-iteration/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch9-9-1-panic/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch9-9-10-usage-in-main/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch9-9-12-main-return-type-update/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch9-9-4-error-file-handle/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch9-9-5-different-errors-shortand/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch9-9-5-different-errors/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch9-9-6-propagating-errors/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch9-9-7-propagating-errors-another-method/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch9-9-8-chaining-methods/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/book-examples/ch9-9-9-direct-open-file/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day10/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day12/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day2/hello/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day3/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day4/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day5/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day6/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day7/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day8/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day9/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/guessing-game/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/projects/uds-simulator/uds-simulator/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/book-examples/ch3-conditions/target" />
+      <excludeFolder url="file://$MODULE_DIR$/book-examples/ch3-constants/target" />
+      <excludeFolder url="file://$MODULE_DIR$/book-examples/ch3-datatypes/target" />
+      <excludeFolder url="file://$MODULE_DIR$/book-examples/ch3-for/target" />
+      <excludeFolder url="file://$MODULE_DIR$/book-examples/ch3-functions/target" />
+      <excludeFolder url="file://$MODULE_DIR$/book-examples/ch3-loop-1/target" />
+      <excludeFolder url="file://$MODULE_DIR$/book-examples/ch3-shadowing/target" />
+      <excludeFolder url="file://$MODULE_DIR$/book-examples/ch3-while/target" />
+      <excludeFolder url="file://$MODULE_DIR$/book-examples/ch4-4-1/target" />
+      <excludeFolder url="file://$MODULE_DIR$/book-examples/target" />
+      <excludeFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day2/hello/target" />
+      <excludeFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day3/target" />
+      <excludeFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day4/target" />
+      <excludeFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day5/target" />
+      <excludeFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day6/target" />
+      <excludeFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day7/target" />
+      <excludeFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day8/target" />
+      <excludeFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/day9/target" />
+      <excludeFolder url="file://$MODULE_DIR$/inpyjama-30-days-of-rust/target" />
+      <excludeFolder url="file://$MODULE_DIR$/projects/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
