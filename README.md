@@ -55,7 +55,7 @@ A small selection of other guides and tutorial for Rust:
 - [Rust 1.78: Performance Impact of the 128-bit Memory Alignment Fix](https://codspeed.io/blog/rust-1-78-performance-impact-of-the-128-bit-memory-alignment-fix)
 - [How to build a plugin system in Rust](https://www.arroyo.dev/blog/rust-plugin-systems)
 - [RUST TYPESTATE PATTERN](https://developerlife.com/2024/05/28/typestate-pattern-rust/)
-- []()
+- [The Sage Programming Language](https://adam-mcdaniel.github.io/sage/sage/index.html)
 
 ## Rust Books Recommendation
 - Claus Matzinger • Learn Rust Programming • https://amzn.to/3PeN0Fx
