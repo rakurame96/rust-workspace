@@ -12,5 +12,5 @@ fn main() {
 
     // }
 
-    println!("1 new tweet: {}", tweet.summarise());
+    println!("1 new tweet: {}", tweet.summarize());
 }
