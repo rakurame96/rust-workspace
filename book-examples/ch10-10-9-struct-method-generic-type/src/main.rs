@@ -1,4 +1,5 @@
 #[derive(Debug)]
+#[allow(unused)]
 struct Point<T> {
     x: T,
     y: T,
