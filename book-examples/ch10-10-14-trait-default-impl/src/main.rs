@@ -1,4 +1,5 @@
-use aggregator::{Summary, Tweet, NewsArticle};
+// use aggregator::{Summary, Tweet, NewsArticle};
+use ch10_10_14_trait_default_impl::*;
 
 fn main() {
     let tweet = Tweet {
