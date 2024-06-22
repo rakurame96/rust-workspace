@@ -56,9 +56,12 @@ A small selection of other guides and tutorial for Rust:
 - [How to build a plugin system in Rust](https://www.arroyo.dev/blog/rust-plugin-systems)
 - [RUST TYPESTATE PATTERN](https://developerlife.com/2024/05/28/typestate-pattern-rust/)
 - [The Sage Programming Language](https://adam-mcdaniel.github.io/sage/sage/index.html)
+- [Learning Material for Idiomatic Rust](https://corrode.dev/blog/idiomatic-rust-resources/)
 
 ## YouTube Videos to look for 
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
+- [Visualizing memory layout of Rust's data types](https://www.youtube.com/watch?v=7_o-YRxf_cc)
+- ["Intro to Monads for Rustaceans" (July 2022)](https://www.youtube.com/watch?v=4Ky8kvDcshg)
 
 ## Rust Books Recommendation
 - Claus Matzinger • Learn Rust Programming • https://amzn.to/3PeN0Fx
