@@ -47,6 +47,11 @@ A small selection of other guides and tutorial for Rust:
 - [awesome-rust](https://github.com/rust-unofficial/awesome-rust)
 - [Let's Get Rusty - Rust Resources](https://letsgetrusty.kartra.com/page/XDk8)
 - [Mainmatter's 100 day's to Rust](https://github.com/mainmatter/100-exercises-to-learn-rust)
+- [24 days of Rust](https://zsiciarz.github.io/24daysofrust/index.html)
+- [24 days of hackage by Ollie Charles](https://blog.ocharles.org.uk/)
+- [Rust Cryptography](https://cryptography.rs/)
+- [Collection of traits which describe functionality of cryptographic primitives](https://github.com/RustCrypto/traits/tree/master)
+
 
 ## Online Articles
 - [Rust-Macros](https://earthly.dev/blog/rust-macros/)
@@ -57,11 +62,14 @@ A small selection of other guides and tutorial for Rust:
 - [RUST TYPESTATE PATTERN](https://developerlife.com/2024/05/28/typestate-pattern-rust/)
 - [The Sage Programming Language](https://adam-mcdaniel.github.io/sage/sage/index.html)
 - [Learning Material for Idiomatic Rust](https://corrode.dev/blog/idiomatic-rust-resources/)
+- [Project Euler - Problem Archives](https://projecteuler.net/archives)
 
 ## YouTube Videos to look for 
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
 - [Visualizing memory layout of Rust's data types](https://www.youtube.com/watch?v=7_o-YRxf_cc)
 - ["Intro to Monads for Rustaceans" (July 2022)](https://www.youtube.com/watch?v=4Ky8kvDcshg)
+- [Rust Cryptography Series by Uncloak Cryptography](https://youtube.com/playlist?list=PLzJmbuzo05ReLE7dqX3WRTYXfHsQYuag7&si=SPtTM1_835vI_DT1)
+- [Intro To Rust Cryptography: Hashing with SHA2](https://www.youtube.com/watch?v=pmBxPUaIvaI)
 
 ## Rust Books Recommendation
 - Claus Matzinger • Learn Rust Programming • https://amzn.to/3PeN0Fx
@@ -72,5 +80,8 @@ A small selection of other guides and tutorial for Rust:
 - Blandy, Orendorff & Tindall • Programming Rust • https://amzn.to/3x7r6w6
 - Ken Youens-Clark • Command-Line Rust • https://amzn.to/3PQZ539
 - Kevin Hoffman • Programming WebAssembly with Rust • https://amzn.to/3x3brhe
+- [Practical Cryptography for Developers](https://cryptobook.nakov.com/)
+    - [Explained from First Principles - Number Theory](https://explained-from-first-principles.com/number-theory/)
+- [Cryptography in Rust for Hackers](https://cryptographyinrustforhackers.com/index.html)
 
 Please see the [Little Book of Rust Books](https://lborb.github.io/book/) for even more Rust books.
