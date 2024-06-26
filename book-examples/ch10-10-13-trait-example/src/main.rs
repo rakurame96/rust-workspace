@@ -11,9 +11,5 @@ fn main() {
         retweet: false,
     };
 
-    // let summary = Summary {
-
-    // }
-
     println!("1 new tweet: {}", tweet.summarize());
 }
