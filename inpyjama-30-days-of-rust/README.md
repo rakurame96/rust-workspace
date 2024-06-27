@@ -761,6 +761,10 @@ files in the src/bin directory: each file will be a separate binary crate.
     - When code panics, there’s no way to recover. You could call `panic!` for any error situation, whether there’s a possible way to recover or not, but then you’re making the decision that a situation is unrecoverable on behalf of the calling code. When you choose to return a `Result` value, you give the calling code options. The calling code could choose to attempt to recover in a way that’s appropriate for its situation, or it could decide that an `Err` value in this case is unrecoverable, so it can call `panic!` and turn your recoverable error into an unrecoverable one. Therefore, returning Result is a good default choice when you’re defining a function that might fail.
 
     - [Rust error handling: Option & Result](https://bitfieldconsulting.com/posts/rust-errors-option-result)
+
+**Traits**
+- For example, we can’t implement the `Display` trait on `Vec<T>` within our aggregator crate because `Display` and `Vec<T>` are both defined in the standard library and aren’t local to our aggregator crate. This restriction is part of a property called **coherence**, and more specifically the **orphan rule**, so named because the parent type is not present. This rule ensures that other people’s code can’t break your code and vice versa. Without the rule, two crates could implement the same trait for the same type, and Rust wouldn’t know which implementation to use
+    - NOTE: Name `aggregator` is the name of the library crate created in this example
     
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
