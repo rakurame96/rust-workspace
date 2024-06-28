@@ -63,6 +63,10 @@ A small selection of other guides and tutorial for Rust:
 - [The Sage Programming Language](https://adam-mcdaniel.github.io/sage/sage/index.html)
 - [Learning Material for Idiomatic Rust](https://corrode.dev/blog/idiomatic-rust-resources/)
 - [Project Euler - Problem Archives](https://projecteuler.net/archives)
+- [Claiming, auto and otherwise](https://smallcultfollowing.com/babysteps/blog/2024/06/21/claim-auto-and-otherwise/)
+- [The definitive guide to error handling in Rust](https://www.howtocodeit.com/articles/the-definitive-guide-to-rust-error-handling)
+- [Master hexagonal architecture in Rust](https://www.howtocodeit.com/articles/master-hexagonal-architecture-rust
+- [From Sender to Receiver: Rust’s Approach to Local File Transfers](https://levelup.gitconnected.com/from-sender-to-receiver-rusts-approach-to-local-file-transfers-e6a778020d90)
 
 ## YouTube Videos to look for 
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
