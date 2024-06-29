@@ -74,6 +74,8 @@ A small selection of other guides and tutorial for Rust:
 - ["Intro to Monads for Rustaceans" (July 2022)](https://www.youtube.com/watch?v=4Ky8kvDcshg)
 - [Rust Cryptography Series by Uncloak Cryptography](https://youtube.com/playlist?list=PLzJmbuzo05ReLE7dqX3WRTYXfHsQYuag7&si=SPtTM1_835vI_DT1)
 - [Intro To Rust Cryptography: Hashing with SHA2](https://www.youtube.com/watch?v=pmBxPUaIvaI)
+- [Understanding Rust Closures aka. Anonymous Functions 🦀 💻](https://www.youtube.com/watch?v=qXNUHfpalts)
+- [Rust Match Expressions and Patterns 🦀](https://www.youtube.com/watch?v=pf8eQwWkTaY)
 
 ## Rust Books Recommendation
 - Claus Matzinger • Learn Rust Programming • https://amzn.to/3PeN0Fx
