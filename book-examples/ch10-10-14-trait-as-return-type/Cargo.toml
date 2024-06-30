@@ -1,0 +1,14 @@
+[package]
+name = "ch10-10-14-trait-as-return-type"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[lib]
+name = "ch10_10_14_trait_as_return_type"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ch10_10_14_trait_as_return_type"
+path = "src/main.rs"
