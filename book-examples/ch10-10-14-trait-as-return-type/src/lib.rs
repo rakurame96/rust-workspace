@@ -1,4 +1,4 @@
-use std::fmt;
+// use std::fmt;
 
 pub trait Summary {
     fn summarize_author(&self) -> String;
@@ -9,11 +9,11 @@ pub trait Summary {
     }
 }
 
-impl fmt::Display for dyn Summary{
-    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "{}", self.summarize())
-    }
-}
+// impl fmt::Display for dyn Summary{
+//     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+//         write!(f, "{}", self.summarize())
+//     }
+// }
 
 // regular implementation
 pub fn notify(item: &impl Summary) {
@@ -46,11 +46,11 @@ pub struct Tweet {
     pub retweet: bool, 
 }
 
-impl fmt::Display for Tweet {
-    fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
-        write!(f, "username: {}, content: {}, reply: {}, retweet: {}", self.username, self.content, self.reply, self.retweet)
-    }
-}
+// impl fmt::Display for Tweet {
+//     fn fmt(&self, f: &mut fmt::Formatter<'_>) -> fmt::Result {
+//         write!(f, "username: {}, content: {}, reply: {}, retweet: {}", self.username, self.content, self.reply, self.retweet)
+//     }
+// }
 
 impl Summary for Tweet {
     // fn summarize(&self) -> String {

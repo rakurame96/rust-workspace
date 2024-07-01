@@ -24,7 +24,7 @@ fn main() {
     println!("New article available! {}", article.summarize());
 
     let fn_return = returns_summarizable();
-    println!("1 new tweet: {}", fn_return);
+    // println!("1 new tweet: {}", fn_return);
 }
 
 fn returns_summarizable() -> impl Summary {

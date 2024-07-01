@@ -1,0 +1,14 @@
+[package]
+name = "ch10-10-15-trait-bounds"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
+[lib]
+name = "ch10_10_15_trait_bounds"
+path = "src/lib.rs"
+
+[[bin]]
+name = "ch10_10_15_trait_bounds"
+path = "src/main.rs"
