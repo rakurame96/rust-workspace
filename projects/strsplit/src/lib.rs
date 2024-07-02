@@ -3,7 +3,7 @@
 
 #[derive(Debug)]
 pub struct StrSplit<'a> {
-    remainder: &'a str,
+    remainder: Option<&'a str>,
     delimiter: &'a str,
 }
 
@@ -23,7 +23,7 @@ impl<T> Foo<T> {} // by doing this, it will make the impl block as a generic imp
 impl<'a> StrSplit<'a> {
     pub fn new(haystack: &'a str, delimiter: &'a str) -> Self {
         Self {
-            remainder: haystack,
+            remainder: Some(haystack),
             delimiter,
         }
     }
@@ -36,19 +36,18 @@ impl<'a> Iterator for StrSplit<'a> {
     type Item = &'a str;
     fn next(&mut self) -> Option<Self::Item> {
         // find the delimiter in the string slice
-        if let Some(next_delim) = self.remainder.find(self.delimiter) {
-            /* once found, copy them to until_delimiter from the start of string till where the delimiter present */
-            let until_delimiter = &self.remainder[..next_delim]; 
-            self.delimiter = &self.remainder[(next_delim + self.delimiter.len())..];    // till end of the string slice
-            Some(until_delimiter)
-        } else if self.remainder.is_empty() {
-            // TODO: bug
-            None
+        if let Some(ref mut remainder /* &mut &'a str */) = self.remainder /* Option<&'a str> */
+        {
+            if let Some(next_delim) = remainder.find(self.delimiter) {
+                let until_delimiter = &remainder[..next_delim];
+                // dereferening
+                *remainder = &remainder[(next_delim + self.delimiter.len())..];
+                Some(until_delimiter)
+            } else {
+                self.remainder.take()
+            }
         } else {
-            let rest = self.remainder;
-            self.remainder = "";
-            // &'a str     &'static str (static lifetime)
-            Some(rest)
+            None
         }
     }
 }
@@ -56,6 +55,17 @@ impl<'a> Iterator for StrSplit<'a> {
 #[test]
 fn it_works() {
     let haystack = "a b c d e";
-    let letters = StrSplit::new(haystack, " ");
-    assert!(letters.eq(vec!["a", "b", "c", "d", "e"].into_iter()));
+    let letters: Vec<_> = StrSplit::new(haystack, " ").collect();
+    // println!("letters : {:?}", letters);
+    // assert!(letters.into_iter().eq(vec!["a", "b", "c", "d", "e"].into_iter()));
+    assert_eq!(letters, vec!["a", "b", "c", "d", "e"]);
+}
+
+#[test]
+fn tail() {
+    let haystack = "a b c d ";
+    let letters: Vec<_> = StrSplit::new(haystack, " ").collect();
+    // println!("letters : {:?}", letters);
+    // assert!(letters.into_iter().eq(vec!["a", "b", "c", "d", "e"].into_iter()));
+    assert_eq!(letters, vec!["a", "b", "c", "d", ""]);
 }
