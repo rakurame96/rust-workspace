@@ -2,9 +2,9 @@
 //#![warn(missing_debug_implementations, rust_2018_idioms, missing_docs)]
 
 #[derive(Debug)]
-pub struct StrSplit<'a> {
-    remainder: Option<&'a str>,
-    delimiter: &'a str,
+pub struct StrSplit<'haystack, 'delimiter> {
+    remainder: Option<&'haystack str>,
+    delimiter: &'delimiter str,
 }
 
 // why do impl block as <'a> to understand this, let's go back to the struct example
@@ -21,15 +21,18 @@ impl<T> Foo<T> {} // by doing this, it will make the impl block as a generic imp
 // '_ - tick underscore - means a pattern that matches anything (type inferences for references) or otherwise don't consider this lifetime for the purpose of guessing
 // 'a - tick a - specific lifetime same as 
 
-// str -> [char] type (it only stores the start address and total size)
-// &str -> &[char] it is a pointer to a sequence of characters
-// String -> Vec<char> heap allocated. can shrink and grow dynamically
+// str -> [char] type (collecton or sequence of characters. it only stores the start address and total size)
+// &str -> &[char] it is a pointer to a sequence of characters (FAT Pointer) (Knows starting address and how long the string is - length)
+// String -> Vec<char> heap allocated. can shrink and grow dynamically. From String, I can retrieve the refernce to &str.
 //
 // String -> &str (possible) -- (AsRef)
 // &str -> String (very trivial as need to copy the contents to heap in order to store it as a String type) -- (Clone)
 
-impl<'a> StrSplit<'a> {
-    pub fn new(haystack: &'a str, delimiter: &'a str) -> Self {
+// The term "fat pointer" is used to refer to references and raw pointers to dynamically sized types (DSTs) – slices or trait objects. 
+// A fat pointer contains a pointer plus some information that makes the DST "complete" (e.g. the length).
+
+impl<'haystack, 'delimiter> StrSplit<'haystack, 'delimiter> {
+    pub fn new(haystack: &'haystack str, delimiter: &'delimiter str) -> Self {
         Self {
             remainder: Some(haystack),
             delimiter,
@@ -40,8 +43,8 @@ impl<'a> StrSplit<'a> {
 // let x = StrSplit;
 // for part in x {
 // }
-impl<'a> Iterator for StrSplit<'a> {
-    type Item = &'a str;
+impl<'haystack, 'delimiter> Iterator for StrSplit<'haystack, 'delimiter> {
+    type Item = &'haystack str;
     fn next(&mut self) -> Option<Self::Item> {
         // find the delimiter in the string slice
         // if let Some(ref mut remainder /* &mut &'a str */) = self.remainder /* Option<&'a str> */
@@ -57,8 +60,9 @@ impl<'a> Iterator for StrSplit<'a> {
     }
 }
 
-fn until_char<'s>(s: &'s str, c: char) -> &'s str {
-    StrSplit::new(s, format!("{}", c))
+fn until_char<'delimiter>(s: &'delimiter str, c: char) -> &'delimiter str {
+    let delim = format!("{}", c);
+    StrSplit::new(s, &delim)
         .next()
         .expect("StrSplit always gives at least one result")
 }
