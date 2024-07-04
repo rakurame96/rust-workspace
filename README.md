@@ -51,6 +51,7 @@ A small selection of other guides and tutorial for Rust:
 - [24 days of hackage by Ollie Charles](https://blog.ocharles.org.uk/)
 - [Rust Cryptography](https://cryptography.rs/)
 - [Collection of traits which describe functionality of cryptographic primitives](https://github.com/RustCrypto/traits/tree/master)
+- [Algorithms and Data Structures of all kinds written in Rust](https://github.com/alexfertel/rust-algorithms)
 
 
 ## Online Articles
