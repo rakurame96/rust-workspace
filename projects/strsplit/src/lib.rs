@@ -2,9 +2,9 @@
 //#![warn(missing_debug_implementations, rust_2018_idioms, missing_docs)]
 
 #[derive(Debug)]
-pub struct StrSplit<'haystack, 'delimiter> {
+pub struct StrSplit<'haystack, D> {
     remainder: Option<&'haystack str>,
-    delimiter: &'delimiter str,
+    delimiter: D,
 }
 
 // why do impl block as <'a> to understand this, let's go back to the struct example
@@ -31,8 +31,8 @@ impl<T> Foo<T> {} // by doing this, it will make the impl block as a generic imp
 // The term "fat pointer" is used to refer to references and raw pointers to dynamically sized types (DSTs) – slices or trait objects. 
 // A fat pointer contains a pointer plus some information that makes the DST "complete" (e.g. the length).
 
-impl<'haystack, 'delimiter> StrSplit<'haystack, 'delimiter> {
-    pub fn new(haystack: &'haystack str, delimiter: &'delimiter str) -> Self {
+impl<'haystack, D> StrSplit<'haystack, D> {
+    pub fn new(haystack: &'haystack str, delimiter: D) -> Self {
         Self {
             remainder: Some(haystack),
             delimiter,
@@ -40,19 +40,26 @@ impl<'haystack, 'delimiter> StrSplit<'haystack, 'delimiter> {
     }
 }
 
+pub trait Delimiter {
+    fn find_next(&self, s: &str) -> Option<(usize, usize)>;
+}
+
 // let x = StrSplit;
 // for part in x {
 // }
-impl<'haystack, 'delimiter> Iterator for StrSplit<'haystack, 'delimiter> {
+impl<'haystack, D> Iterator for StrSplit<'haystack, D> 
+where
+    D: Delimiter
+{
     type Item = &'haystack str;
     fn next(&mut self) -> Option<Self::Item> {
         // find the delimiter in the string slice
         // if let Some(ref mut remainder /* &mut &'a str */) = self.remainder /* Option<&'a str> */
         let remainder = self.remainder.as_mut()?;
-        if let Some(next_delim) = remainder.find(self.delimiter) {
-            let until_delimiter = &remainder[..next_delim];
+        if let Some((delim_start, delim_end)) = self.delimiter.find_next(remainder) {
+            let until_delimiter = &remainder[..delim_start];
             // dereferening
-            *remainder = &remainder[(next_delim + self.delimiter.len())..];
+            *remainder = &remainder[delim_end..];
             Some(until_delimiter)
         } else {
             self.remainder.take()
@@ -60,9 +67,23 @@ impl<'haystack, 'delimiter> Iterator for StrSplit<'haystack, 'delimiter> {
     }
 }
 
+impl Delimiter for &str {
+    fn find_next(&self, s: &str) -> Option<(usize, usize)> {
+        s.find(self).map(|start| (start, start + self.len()))
+    }
+}
+
+impl Delimiter for char {
+    fn find_next(&self, s: &str) -> Option<(usize, usize)> {
+        s.char_indices()
+            .find(|(_, c)| c == self)
+            .map(|(start, _)| (start, start + self.len_utf8()))
+    }
+}
+
 fn until_char<'delimiter>(s: &'delimiter str, c: char) -> &'delimiter str {
-    let delim = format!("{}", c);
-    StrSplit::new(s, &delim)
+    // let delim = format!("{}", c);
+    StrSplit::new(s, c)
         .next()
         .expect("StrSplit always gives at least one result")
 }
