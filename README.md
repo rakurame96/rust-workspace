@@ -27,6 +27,7 @@ More specialized guides hosted on the official Rust site:
 - [The Rustonomicon](https://doc.rust-lang.org/nomicon/): covers unsafe Rust, including working with raw pointers and interfacing with other languages (FFI).
 - [Asynchronous Programming in Rust](https://rust-lang.github.io/async-book/): covers the new asynchronous programming model which was introduced after the Rust Book was written.
 - [The Embedded Rust Book](https://doc.rust-lang.org/stable/embedded-book/): an introduction to using Rust on embedded devices without an operating system.
+- [The Rust Unstable Book](https://doc.rust-lang.org/unstable-book/library-features/test.html)
 
 ## Unofficial Learning Material
 

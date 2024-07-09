@@ -81,6 +81,7 @@ impl Delimiter for char {
     }
 }
 
+#[allow(dead_code)]
 fn until_char<'delimiter>(s: &'delimiter str, c: char) -> &'delimiter str {
     // let delim = format!("{}", c);
     StrSplit::new(s, c)

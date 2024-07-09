@@ -23,6 +23,7 @@ fn main() {
 
     println!("New article available! {}", article.summarize());
 
+    #[allow(unused)]
     let fn_return = returns_summarizable();
     // println!("1 new tweet: {}", fn_return);
 }
