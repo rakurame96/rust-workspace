@@ -17,4 +17,9 @@ mod tests {
         let result = add(0, 5);
         assert_eq!(result, 5);
     }
+
+    #[test]
+    fn make_test_fail() {
+        panic!("make test fail intentionally");
+    }
 }
