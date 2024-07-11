@@ -1,0 +1,6 @@
+[package]
+name = "ch11-11-7-add_two"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
