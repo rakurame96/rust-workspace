@@ -53,6 +53,7 @@ A small selection of other guides and tutorial for Rust:
 - [Rust Cryptography](https://cryptography.rs/)
 - [Collection of traits which describe functionality of cryptographic primitives](https://github.com/RustCrypto/traits/tree/master)
 - [Algorithms and Data Structures of all kinds written in Rust](https://github.com/alexfertel/rust-algorithms)
+- [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/README.html)
 
 
 ## Online Articles
@@ -70,6 +71,7 @@ A small selection of other guides and tutorial for Rust:
 - [Master hexagonal architecture in Rust](https://www.howtocodeit.com/articles/master-hexagonal-architecture-rust
 - [From Sender to Receiver: Rust’s Approach to Local File Transfers](https://levelup.gitconnected.com/from-sender-to-receiver-rusts-approach-to-local-file-transfers-e6a778020d90)
 - [Memory Safety in C++ vs Rust vs Zig](https://medium.com/@shyamsundarb/memory-safety-in-c-vs-rust-vs-zig-f78fa903f41e)
+- [Writing production Rust macros with macro_rules!](https://www.howtocodeit.com/articles/writing-production-rust-macros-with-macro-rules)
 
 ## YouTube Videos to look for 
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)

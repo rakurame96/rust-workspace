@@ -16,10 +16,12 @@ mod tests {
     fn it_does_work() {
         let result = add(0, 5);
         assert_eq!(result, 5);
+        assert_eq!(result, 5, "we are testing addition with {} and {}", result, 5);
+
     }
 
-    #[test]
-    fn make_test_fail() {
-        panic!("make test fail intentionally");
-    }
+    // #[test]
+    // fn make_test_fail() {
+    //     panic!("make test fail intentionally");
+    // }
 }
