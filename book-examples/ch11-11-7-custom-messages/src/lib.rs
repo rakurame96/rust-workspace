@@ -1,3 +1,4 @@
+#[allow(dead_code)]
 pub fn greeting(name: &str) -> String {
     //format!("Hello {name}")
     String::from("hello")
