@@ -81,6 +81,7 @@ A small selection of other guides and tutorial for Rust:
 - [Intro To Rust Cryptography: Hashing with SHA2](https://www.youtube.com/watch?v=pmBxPUaIvaI)
 - [Understanding Rust Closures aka. Anonymous Functions 🦀 💻](https://www.youtube.com/watch?v=qXNUHfpalts)
 - [Rust Match Expressions and Patterns 🦀](https://www.youtube.com/watch?v=pf8eQwWkTaY)
+- [Decrusting the serde crate](https://www.youtube.com/watch?v=BI_bHCGRgMY)
 
 ## Rust Books Recommendation
 - Claus Matzinger • Learn Rust Programming • https://amzn.to/3PeN0Fx
