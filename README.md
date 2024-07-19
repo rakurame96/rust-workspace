@@ -72,6 +72,8 @@ A small selection of other guides and tutorial for Rust:
 - [From Sender to Receiver: Rust’s Approach to Local File Transfers](https://levelup.gitconnected.com/from-sender-to-receiver-rusts-approach-to-local-file-transfers-e6a778020d90)
 - [Memory Safety in C++ vs Rust vs Zig](https://medium.com/@shyamsundarb/memory-safety-in-c-vs-rust-vs-zig-f78fa903f41e)
 - [Writing production Rust macros with macro_rules!](https://www.howtocodeit.com/articles/writing-production-rust-macros-with-macro-rules)
+- [Implementing a generic range parser in Rust](https://blog.veeso.dev/blog/en/implementing-a-generic-range-parser-in-rust/)
+- [The missing parts in Cargo](https://weihanglo.tw/posts/2024/the-missing-parts-in-cargo/)
 
 ## YouTube Videos to look for 
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
