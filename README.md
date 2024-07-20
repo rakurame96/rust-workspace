@@ -54,6 +54,7 @@ A small selection of other guides and tutorial for Rust:
 - [Collection of traits which describe functionality of cryptographic primitives](https://github.com/RustCrypto/traits/tree/master)
 - [Algorithms and Data Structures of all kinds written in Rust](https://github.com/alexfertel/rust-algorithms)
 - [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/README.html)
+- [Gray-Scott with Rust](https://grayscott-with-rust-grasland-5e6591fc7054976525da4f6c87122ea76c.pages.in2p3.fr/)
 
 
 ## Online Articles
@@ -74,6 +75,7 @@ A small selection of other guides and tutorial for Rust:
 - [Writing production Rust macros with macro_rules!](https://www.howtocodeit.com/articles/writing-production-rust-macros-with-macro-rules)
 - [Implementing a generic range parser in Rust](https://blog.veeso.dev/blog/en/implementing-a-generic-range-parser-in-rust/)
 - [The missing parts in Cargo](https://weihanglo.tw/posts/2024/the-missing-parts-in-cargo/)
+- [Build with Naz : Box and Pin exploration in Rust](https://developerlife.com/2024/07/16/pin-box-dynamic-duo/)
 
 ## YouTube Videos to look for 
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
@@ -99,3 +101,8 @@ A small selection of other guides and tutorial for Rust:
 - [Cryptography in Rust for Hackers](https://cryptographyinrustforhackers.com/index.html)
 
 Please see the [Little Book of Rust Books](https://lborb.github.io/book/) for even more Rust books.
+
+## Other Supporting Resources
+- [CS 225: Introduction to Data Structures and Algorithms with C++](https://courses.grainger.illinois.edu/cs225/fa2022/pages/lectures.html)
+- [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html)
+- [Rust-analyzer Documentation](https://rust-analyzer.github.io/)

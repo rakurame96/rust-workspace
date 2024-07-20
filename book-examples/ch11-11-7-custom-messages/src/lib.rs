@@ -1,6 +1,8 @@
 #[allow(dead_code)]
+#[allow(unused)]
 pub fn greeting(name: &str) -> String {
     //format!("Hello {name}")
+    println!("Hello World!");
     String::from("hello")
 }
 

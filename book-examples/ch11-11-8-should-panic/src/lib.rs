@@ -1,3 +1,4 @@
+#[allow(unused)]
 pub struct Guess {
     value: i32,
 }
