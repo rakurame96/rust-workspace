@@ -55,6 +55,10 @@ cargo new restaurant --lib --vcs none
 rustfmt <.\file_name.rs>
 ```
 
+```shell
+cargo expand --lib --tests
+```
+
 > **_NOTE: Ruslings Commands_**
 Commands available to you in watch mode:
   * `hint`   - prints the current exercise's hint

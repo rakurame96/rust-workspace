@@ -54,7 +54,7 @@ A small selection of other guides and tutorial for Rust:
 - [Collection of traits which describe functionality of cryptographic primitives](https://github.com/RustCrypto/traits/tree/master)
 - [Algorithms and Data Structures of all kinds written in Rust](https://github.com/alexfertel/rust-algorithms)
 - [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/README.html)
-- [Gray-Scott with Rust](https://grayscott-with-rust-grasland-5e6591fc7054976525da4f6c87122ea76c.pages.in2p3.fr/)
+- [Gray-Scott with Rust - Writing High Performance Computing (HPC) in Rust!](https://grayscott-with-rust-grasland-5e6591fc7054976525da4f6c87122ea76c.pages.in2p3.fr/)
 
 
 ## Online Articles
@@ -77,7 +77,7 @@ A small selection of other guides and tutorial for Rust:
 - [The missing parts in Cargo](https://weihanglo.tw/posts/2024/the-missing-parts-in-cargo/)
 - [Build with Naz : Box and Pin exploration in Rust](https://developerlife.com/2024/07/16/pin-box-dynamic-duo/)
 
-## YouTube Videos to look for 
+## YouTube Videos to look for (what I watched until now)
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
 - [Visualizing memory layout of Rust's data types](https://www.youtube.com/watch?v=7_o-YRxf_cc)
 - ["Intro to Monads for Rustaceans" (July 2022)](https://www.youtube.com/watch?v=4Ky8kvDcshg)
@@ -86,6 +86,7 @@ A small selection of other guides and tutorial for Rust:
 - [Understanding Rust Closures aka. Anonymous Functions 🦀 💻](https://www.youtube.com/watch?v=qXNUHfpalts)
 - [Rust Match Expressions and Patterns 🦀](https://www.youtube.com/watch?v=pf8eQwWkTaY)
 - [Decrusting the serde crate](https://www.youtube.com/watch?v=BI_bHCGRgMY)
+- [How Rust's println! macro really works](https://www.youtube.com/watch?v=WB0l1_YbHok)
 
 ## Rust Books Recommendation
 - Claus Matzinger • Learn Rust Programming • https://amzn.to/3PeN0Fx
@@ -97,7 +98,7 @@ A small selection of other guides and tutorial for Rust:
 - Ken Youens-Clark • Command-Line Rust • https://amzn.to/3PQZ539
 - Kevin Hoffman • Programming WebAssembly with Rust • https://amzn.to/3x3brhe
 - [Practical Cryptography for Developers](https://cryptobook.nakov.com/)
-    - [Explained from First Principles - Number Theory](https://explained-from-first-principles.com/number-theory/)
+- [Explained from First Principles - Number Theory](https://explained-from-first-principles.com/number-theory/)
 - [Cryptography in Rust for Hackers](https://cryptographyinrustforhackers.com/index.html)
 
 Please see the [Little Book of Rust Books](https://lborb.github.io/book/) for even more Rust books.

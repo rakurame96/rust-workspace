@@ -2,5 +2,5 @@
 resolver = "2"
 
 members = [
-    "guessing-game", "strsplit", "uds-simulator/uds-simulator",
+    "guessing-game", "macro_rules", "strsplit", "uds-simulator/uds-simulator", "vec_macro",
 ]
