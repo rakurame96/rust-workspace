@@ -29,9 +29,37 @@ enum Json {
 
 #[macro_export]
 macro_rules! json {
+    // pattern 1
+    // pattern => template
     (null) => {
         Json::Null  
     };
+    
+    // pattern 2
+    // ([ ... ]) => {
+    //     Json::Array(...)
+    // };
+    
+
+    // pattern 3
+    // ({ ... }) => {
+    //     Json::Object(...)
+    // };
+
+    // pattern 4
+    // (???) => {
+    //     Json::Boolean(...)
+    // };
+
+    // pattern 5
+    // (???) => {
+    //     Json::Number(...)
+    // };
+
+    // pattern 6
+    // (???) => {
+    //     Json::String(...)
+    // };
 }
 
 #[cfg(test)]
