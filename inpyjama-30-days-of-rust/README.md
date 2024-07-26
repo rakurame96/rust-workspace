@@ -788,6 +788,7 @@ files in the src/bin directory: each file will be a separate binary crate.
 11. [Day 10: Heap vs Stack](https://inpyjama.com/day-10-heap-vs-stack/)
 12. [Day 11: Handling Heap](https://inpyjama.com/day-11-handling-strings/)
 13. [Day 12: Strings](https://inpyjama.com/day-12-strings/)
+14. [Day 13: The Ownership Model](https://inpyjama.com/day-13/)
 
 # Other important links
 1. [UTF8 Decoder](https://www.browserling.com/tools/utf8-decode)

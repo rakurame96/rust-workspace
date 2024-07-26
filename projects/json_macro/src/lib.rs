@@ -39,18 +39,27 @@ macro_rules! json {
     // ([ ... ]) => {
     //     Json::Array(...)
     // };
-    
+    ([ $( $element:tt),* ]) => {
+        Json::Array(vec![ $( json!($element) ),* ])
+    };
 
     // pattern 3
     // ({ ... }) => {
     //     Json::Object(...)
     // };
+    ({ $( $key:tt : $value:tt),* }) => {
+        Json::Object(Box::new(vec![
+            $( (key.to_string(), json!($value)) ),*
+        ].into_iter().collect()))
+    };
 
     // pattern 4
     // (???) => {
     //     Json::Boolean(...)
     // };
-
+    ( $other:tt) => {
+        json::from($other)      // handles boolean, numbers, string
+    };
     // pattern 5
     // (???) => {
     //     Json::Number(...)
@@ -60,6 +69,43 @@ macro_rules! json {
     // (???) => {
     //     Json::String(...)
     // };
+}
+
+#[macro_export]
+macro_rules! impl_from_num_for_json {
+    ( $( $t:ident )* ) => {
+        $(
+            impl From<$t> for Json {
+                fn from(n: $t) -> Json {
+                    Json::Number(n as f64)
+                }
+            }
+        )*
+    };
+}
+
+impl From<bool> for Json {
+    fn from(b: bool) -> Json {
+        Json::Boolean(b)
+    }
+}
+
+impl From<i32> for Json {
+    fn from(l: i32) -> Json {
+        Json::Number(l as f64)
+    }
+}
+
+impl From<String> for Json {
+    fn from(s: String) -> Json {
+        Json::String(s)
+    }
+}
+
+impl From<&'a str> for Json {
+    fn from(s: &'a str) -> Json {
+        Json::String(s.to_string())
+    }
 }
 
 #[cfg(test)]
