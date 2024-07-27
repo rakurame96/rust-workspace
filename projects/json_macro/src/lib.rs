@@ -48,9 +48,14 @@ macro_rules! json {
     //     Json::Object(...)
     // };
     ({ $( $key:tt : $value:tt),* }) => {
-        Json::Object(Box::new(vec![
-            $( (key.to_string(), json!($value)) ),*
-        ].into_iter().collect()))
+        // Json::Object(Box::new(vec![
+        //     $( (key.to_string(), json!($value)) ),*
+        // ].into_iter().collect()))
+        {
+            let mut fields = Box::new(HashMap::new());
+            $( fields.insert($key.to_string(), json!($value)); )*
+            Json::Object(fields);
+        }
     };
 
     // pattern 4
