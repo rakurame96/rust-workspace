@@ -1,4 +1,6 @@
-use std::collections::HashMap;
+pub use std::collections::HashMap;
+pub use std::boxed::Box;
+pub use std::string::ToString;
 
 /*
 Our example JSON data
@@ -32,7 +34,7 @@ macro_rules! json {
     // pattern 1
     // pattern => template
     (null) => {
-        Json::Null  
+        $crate::Json::Null  
     };
     
     // pattern 2
@@ -40,7 +42,7 @@ macro_rules! json {
     //     Json::Array(...)
     // };
     ([ $( $element:tt),* ]) => {
-        Json::Array(vec![ $( json!($element) ),* ])
+        $crate::Json::Array(vec![ $( json!($element) ),* ])
     };
 
     // pattern 3
@@ -52,9 +54,12 @@ macro_rules! json {
         //     $( (key.to_string(), json!($value)) ),*
         // ].into_iter().collect()))
         {
-            let mut fields = Box::new(HashMap::new());
-            $( fields.insert($key.to_string(), json!($value)); )*
-            Json::Object(fields);
+            let mut fields = $crate::macroBox::new(
+                $crate::macros::HashMap::new());
+            $( 
+                fields.insert($crate::macros::ToString::to_string($key), 
+                                json!($value)); )*
+            $crate::Json::Object(fields);
         }
     };
 
@@ -63,7 +68,7 @@ macro_rules! json {
     //     Json::Boolean(...)
     // };
     ( $other:tt) => {
-        json::from($other)      // handles boolean, numbers, string
+        $crate::Json::from($other)      // handles boolean, numbers, string
     };
     // pattern 5
     // (???) => {
@@ -107,11 +112,11 @@ impl From<String> for Json {
     }
 }
 
-impl From<&'a str> for Json {
-    fn from(s: &'a str) -> Json {
-        Json::String(s.to_string())
-    }
-}
+// impl From<&'a str> for Json {
+//     fn from(s: &'a str) -> Json {
+//         Json::String(s.to_string())
+//     }
+// }
 
 #[cfg(test)]
 mod tests {

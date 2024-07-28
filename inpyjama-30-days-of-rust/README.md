@@ -55,8 +55,21 @@ cargo new restaurant --lib --vcs none
 rustfmt <.\file_name.rs>
 ```
 
+#### to expand the macros in the library within the terminal
 ```shell
 cargo expand --lib --tests
+```
+
+#### to execute all tests available in the library
+```shell
+cargo test
+
+cargo t
+```
+
+#### to execute particular test
+```shell
+cargo t <test_function_name>
 ```
 
 > **_NOTE: Ruslings Commands_**
