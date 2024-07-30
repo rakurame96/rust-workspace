@@ -72,6 +72,16 @@ cargo t
 cargo t <test_function_name>
 ```
 
+### to execute testcases do we need parallelism (1 means no parallelism)
+```shell
+cargo test -- --test-threads=1
+```
+
+### to run only ignored tests
+```shell
+cargo test -- --ignored
+```
+
 > **_NOTE: Ruslings Commands_**
 Commands available to you in watch mode:
   * `hint`   - prints the current exercise's hint
@@ -783,6 +793,10 @@ files in the src/bin directory: each file will be a separate binary crate.
 - For example, we can’t implement the `Display` trait on `Vec<T>` within our aggregator crate because `Display` and `Vec<T>` are both defined in the standard library and aren’t local to our aggregator crate. This restriction is part of a property called **coherence**, and more specifically the **orphan rule**, so named because the parent type is not present. This rule ensures that other people’s code can’t break your code and vice versa. Without the rule, two crates could implement the same trait for the same type, and Rust wouldn’t know which implementation to use
     - NOTE: Name `aggregator` is the name of the library crate created in this example
     
+**Tests**
+- **Unit tests** are small and more focused, testing one module in isolation at a time, and can test private interfaces. 
+- **Integration tests** are entirely external to your library and use your code in the same way any other external code would, using only the public interface and potentially exercising multiple modules per test.
+
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
 * https://fasterthanli.me/articles/a-half-hour-to-learn-rust

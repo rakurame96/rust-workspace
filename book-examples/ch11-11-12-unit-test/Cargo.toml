@@ -1,0 +1,6 @@
+[package]
+name = "ch11-11-12-unit-test"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
