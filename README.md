@@ -77,6 +77,13 @@ A small selection of other guides and tutorial for Rust:
 - [The missing parts in Cargo](https://weihanglo.tw/posts/2024/the-missing-parts-in-cargo/)
 - [Build with Naz : Box and Pin exploration in Rust](https://developerlife.com/2024/07/16/pin-box-dynamic-duo/)
 
+## Interesting Rust Projects
+- [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)
+- [Rust - Base64 encoding and decoding](https://www.thespatula.io/rust/rust_base64/)
+- [Rust - Implementing SHA-1](https://www.thespatula.io/rust/rust_sha1/)
+
+
+
 ## YouTube Videos to look for (what I watched until now)
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
 - [Visualizing memory layout of Rust's data types](https://www.youtube.com/watch?v=7_o-YRxf_cc)
