@@ -82,8 +82,6 @@ A small selection of other guides and tutorial for Rust:
 - [Rust - Base64 encoding and decoding](https://www.thespatula.io/rust/rust_base64/)
 - [Rust - Implementing SHA-1](https://www.thespatula.io/rust/rust_sha1/)
 
-
-
 ## YouTube Videos to look for (what I watched until now)
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
 - [Visualizing memory layout of Rust's data types](https://www.youtube.com/watch?v=7_o-YRxf_cc)
@@ -114,3 +112,6 @@ Please see the [Little Book of Rust Books](https://lborb.github.io/book/) for ev
 - [CS 225: Introduction to Data Structures and Algorithms with C++](https://courses.grainger.illinois.edu/cs225/fa2022/pages/lectures.html)
 - [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html)
 - [Rust-analyzer Documentation](https://rust-analyzer.github.io/)
+
+## Embedded Rust
+- [Embedded Rust Weekely Newsletter](https://www.theembeddedrustacean.com/)
