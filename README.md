@@ -76,7 +76,7 @@ A small selection of other guides and tutorial for Rust:
 - [Implementing a generic range parser in Rust](https://blog.veeso.dev/blog/en/implementing-a-generic-range-parser-in-rust/)
 - [The missing parts in Cargo](https://weihanglo.tw/posts/2024/the-missing-parts-in-cargo/)
 - [Build with Naz : Box and Pin exploration in Rust](https://developerlife.com/2024/07/16/pin-box-dynamic-duo/)
-- []
+- [Procedural Macros in Rust – A Handbook for Beginners](https://www.freecodecamp.org/news/procedural-macros-in-rust/)
 
 ## Interesting Rust Projects
 - [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)
