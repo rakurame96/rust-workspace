@@ -43,6 +43,7 @@ A small selection of other guides and tutorial for Rust:
 - [Rustonomicon Book](https://doc.rust-lang.org/nomicon/intro.html)
 - [Rust Books Reference](https://github.com/sger/RustBooks?tab=readme-ov-file#starter-books)
 - [Rust-for-Linux](https://rust-for-linux.com/)
+- [Linux Kernel Rust Development Environment](https://tomcat0x42.me/linux/rust/2023/04/01/linux-kernel-rust-dev-environment.html)
 - [100 Exercises To Learn Rust](https://rust-exercises.com/)
 - [Rust-Advanced-Testing-Workshop](https://github.com/mainmatter/rust-advanced-testing-workshop)
 - [awesome-rust](https://github.com/rust-unofficial/awesome-rust)
@@ -82,6 +83,7 @@ A small selection of other guides and tutorial for Rust:
 - [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)
 - [Rust - Base64 encoding and decoding](https://www.thespatula.io/rust/rust_base64/)
 - [Rust - Implementing SHA-1](https://www.thespatula.io/rust/rust_sha1/)
+- [LearnRust](https://github.com/ImplFerris/LearnRust)
 
 ## YouTube Videos to look for (what I watched until now)
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
@@ -116,3 +118,8 @@ Please see the [Little Book of Rust Books](https://lborb.github.io/book/) for ev
 
 ## Embedded Rust
 - [Embedded Rust Weekely Newsletter](https://www.theembeddedrustacean.com/)
+- [A 5-Step Guide For Learning Embedded Rust](https://www.theembeddedrustacean.com/p/embedded-rust-learning-guide?_bhlid=bbd46de6717845a9bcb6c9ab8713d488e9f4e76f)
+- [STM32F4 with Embedded Rust at the HAL](https://blog.theembeddedrustacean.com/series/stm32f4-embedded-rust-hal)
+- [https://thejpster.org.uk/blog/blog-2024-08-08/](https://thejpster.org.uk/blog/blog-2024-08-08/)
+- [Embedded Rust Contribution Guide](https://www.theembeddedrustacean.com/p/embedded-rust-contribution-guide?_bhlid=407ff0625ecc2e17157dcbc36c986e1f10c2de34)
+- [Developing a cryptographically secure bootloader for RISC-V in Rust](https://www.codethink.co.uk/articles/2024/secure_bootloader/?_bhlid=990417fa0db0f78bdb27533093300493abdb0ba8)
