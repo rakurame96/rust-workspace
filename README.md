@@ -78,6 +78,8 @@ A small selection of other guides and tutorial for Rust:
 - [The missing parts in Cargo](https://weihanglo.tw/posts/2024/the-missing-parts-in-cargo/)
 - [Build with Naz : Box and Pin exploration in Rust](https://developerlife.com/2024/07/16/pin-box-dynamic-duo/)
 - [Procedural Macros in Rust – A Handbook for Beginners](https://www.freecodecamp.org/news/procedural-macros-in-rust/)
+- [Rust Number Types Explained](https://cudi.dev/articles/rust_number_types_explained)
+- [Rust's Mutex, Atomics and UnsafeCell – Spooky Action at a Distance?](https://leon.schuermann.io/blog/2024-08-07_rust-mutex-atomics-unsafecell_spooky-action-at-a-distance.html)
 
 ## Interesting Rust Projects
 - [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)
