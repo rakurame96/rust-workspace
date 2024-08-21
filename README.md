@@ -21,6 +21,7 @@ The Rust project hosts many resources. These cover Rust in general:
 - [Rust By Example](https://doc.rust-lang.org/rust-by-example/): covers the Rust syntax via a series of examples which showcase different constructs. Sometimes includes small exercises where you are asked to expand on the code in the examples.
 - [Rust Standard Library](https://doc.rust-lang.org/std/): full documentation of the standard library for Rust.
 - [The Rust Reference](https://doc.rust-lang.org/reference/): an incomplete book which describes the Rust grammar and memory model.
+- [The Cargo Book](https://doc.rust-lang.org/cargo/reference)
 
 More specialized guides hosted on the official Rust site:
 
@@ -56,6 +57,7 @@ A small selection of other guides and tutorial for Rust:
 - [Algorithms and Data Structures of all kinds written in Rust](https://github.com/alexfertel/rust-algorithms)
 - [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/README.html)
 - [Gray-Scott with Rust - Writing High Performance Computing (HPC) in Rust!](https://grayscott-with-rust-grasland-5e6591fc7054976525da4f6c87122ea76c.pages.in2p3.fr/)
+- [Comprehensive Rust 🦀](https://comprehensive-rust.mo8it.com/)
 
 
 ## Online Articles
@@ -80,12 +82,15 @@ A small selection of other guides and tutorial for Rust:
 - [Procedural Macros in Rust – A Handbook for Beginners](https://www.freecodecamp.org/news/procedural-macros-in-rust/)
 - [Rust Number Types Explained](https://cudi.dev/articles/rust_number_types_explained)
 - [Rust's Mutex, Atomics and UnsafeCell – Spooky Action at a Distance?](https://leon.schuermann.io/blog/2024-08-07_rust-mutex-atomics-unsafecell_spooky-action-at-a-distance.html)
+- [Myths and Legends about Integer Overflow in Rust](https://huonw.github.io/blog/2016/04/myths-and-legends-about-integer-overflow-in-rust/)
 
 ## Interesting Rust Projects
 - [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)
 - [Rust - Base64 encoding and decoding](https://www.thespatula.io/rust/rust_base64/)
 - [Rust - Implementing SHA-1](https://www.thespatula.io/rust/rust_sha1/)
 - [LearnRust](https://github.com/ImplFerris/LearnRust)
+- [Rustlings Rewrite](https://mo8it.com/blog/rustlings-rewrite/)
+- [Teaching Rust](https://mo8it.com/blog/teaching-rust/)
 
 ## YouTube Videos to look for (what I watched until now)
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
