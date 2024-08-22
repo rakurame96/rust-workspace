@@ -91,6 +91,7 @@ A small selection of other guides and tutorial for Rust:
 - [LearnRust](https://github.com/ImplFerris/LearnRust)
 - [Rustlings Rewrite](https://mo8it.com/blog/rustlings-rewrite/)
 - [Teaching Rust](https://mo8it.com/blog/teaching-rust/)
+- [Teach-rs](https://teach-rs.trifectatech.org/)
 
 ## YouTube Videos to look for (what I watched until now)
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
