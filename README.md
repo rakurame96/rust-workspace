@@ -103,6 +103,7 @@ A small selection of other guides and tutorial for Rust:
 - [Rust Match Expressions and Patterns 🦀](https://www.youtube.com/watch?v=pf8eQwWkTaY)
 - [Decrusting the serde crate](https://www.youtube.com/watch?v=BI_bHCGRgMY)
 - [How Rust's println! macro really works](https://www.youtube.com/watch?v=WB0l1_YbHok)
+- [Linting Rust Code With Clippy CLI Rules 🤯🦀 Rust Programming Tutorial for Developers](https://www.youtube.com/watch?v=_YFZZc5jIfY)
 
 ## Rust Books Recommendation
 - Claus Matzinger • Learn Rust Programming • https://amzn.to/3PeN0Fx

@@ -70,9 +70,6 @@ cargo expand >filename.rs
 cargo expand --lib --tests
 ```
 
-
-
-
 #### to execute all tests available in the library
 ```shell
 cargo test
@@ -93,6 +90,37 @@ cargo test -- --test-threads=1
 ### to run only ignored tests
 ```shell
 cargo test -- --ignored
+```
+
+### to display the rustup commands
+```shell
+rustup [OPTIONS] [+toolchain] [COMMAND]
+
+### show installed components list
+rustup component list
+```
+
+### to display the lint errors/warnings
+```shell
+cargo clippy
+```
+
+### to provide the clippy commands in the CLI
+```shell
+# this below commands (--A or --allow) will allow the mentioned lint message rather than showing it as warning.
+# --A / --allow
+# --D / --deny
+# --W / --warn
+# --F / --forbidden
+cargo clippy -- --A=clippy::to_string_in_format_args
+```
+
+### to check for the lints in uncommitted changes
+```shell
+# --fix -> will apply the possible fix to resolve the lint error
+# --allow-dirty -> will allow the uncommitted changes to fix the errors
+# --allow-staged -> fix the lint errors in staged files
+cargo clippy --fix --allow-dirty -- --D=clippy::to_string_in_format_args
 ```
 
 > **_NOTE: Ruslings Commands_**
