@@ -104,6 +104,8 @@ A small selection of other guides and tutorial for Rust:
 - [Decrusting the serde crate](https://www.youtube.com/watch?v=BI_bHCGRgMY)
 - [How Rust's println! macro really works](https://www.youtube.com/watch?v=WB0l1_YbHok)
 - [Linting Rust Code With Clippy CLI Rules 🤯🦀 Rust Programming Tutorial for Developers](https://www.youtube.com/watch?v=_YFZZc5jIfY)
+- [Intro to Rust Async Function Execution With Smol 🦀 Rust Programming Tutorial for Developers](https://www.youtube.com/watch?v=NSgyNb0egm4)
+- [Intro Guide to Rust Documentation With Rustdoc 🦀 Rust Tutorial for Developers](https://www.youtube.com/watch?v=G2_Tb2f2F1s)
 
 ## Rust Books Recommendation
 - Claus Matzinger • Learn Rust Programming • https://amzn.to/3PeN0Fx
