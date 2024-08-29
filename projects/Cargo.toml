@@ -1,6 +1,6 @@
 [workspace]
 resolver = "2"
 
-members = [ "cli-minigrep",
+members = [ "async-handson-smol", "cli-minigrep",
     "guessing-game", "json_macro", "lint-help", "macro_rules", "strsplit", "uds-simulator/uds-simulator", "vec_macro",
 ]
