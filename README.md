@@ -83,7 +83,8 @@ A small selection of other guides and tutorial for Rust:
 - [Rust Number Types Explained](https://cudi.dev/articles/rust_number_types_explained)
 - [Rust's Mutex, Atomics and UnsafeCell – Spooky Action at a Distance?](https://leon.schuermann.io/blog/2024-08-07_rust-mutex-atomics-unsafecell_spooky-action-at-a-distance.html)
 - [Myths and Legends about Integer Overflow in Rust](https://huonw.github.io/blog/2016/04/myths-and-legends-about-integer-overflow-in-rust/)
-- [Why am I writing a Rust compiler in C?](https://notgull.net/announcing-dozer/)
+- [Why am I writing a Rust compiler in C?](https://notgull.net/announcing-1dozer/)
+- [How Asynchronous Programming Works in Rust – Futures and Async/Await Explained with Examples](https://www.freecodecamp.org/news/how-asynchronous-programming-works-in-rust/?_bhlid=57a4a0310398678e4bcc09e5bcda1c54b1d6245b)
 
 ## Interesting Rust Projects
 - [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)
