@@ -22,6 +22,7 @@ The Rust project hosts many resources. These cover Rust in general:
 - [Rust Standard Library](https://doc.rust-lang.org/std/): full documentation of the standard library for Rust.
 - [The Rust Reference](https://doc.rust-lang.org/reference/): an incomplete book which describes the Rust grammar and memory model.
 - [The Cargo Book](https://doc.rust-lang.org/cargo/reference)
+- [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html)
 
 More specialized guides hosted on the official Rust site:
 
