@@ -86,6 +86,9 @@ A small selection of other guides and tutorial for Rust:
 - [Myths and Legends about Integer Overflow in Rust](https://huonw.github.io/blog/2016/04/myths-and-legends-about-integer-overflow-in-rust/)
 - [Why am I writing a Rust compiler in C?](https://notgull.net/announcing-1dozer/)
 - [How Asynchronous Programming Works in Rust – Futures and Async/Await Explained with Examples](https://www.freecodecamp.org/news/how-asynchronous-programming-works-in-rust/?_bhlid=57a4a0310398678e4bcc09e5bcda1c54b1d6245b)
+- [Deploying Rust in Existing Firmware Codebases](https://security.googleblog.com/2024/09/deploying-rust-in-existing-firmware.html)
+- [Rust to Assembly: Understanding the Inner Workings of Rust](https://eventhelix.com/rust/)
+- [Rust - A low-level echo server using io_uring](https://www.thespatula.io/rust/rust_io_uring_echo_server/)
 
 ## Interesting Rust Projects
 - [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)
@@ -109,6 +112,8 @@ A small selection of other guides and tutorial for Rust:
 - [Linting Rust Code With Clippy CLI Rules 🤯🦀 Rust Programming Tutorial for Developers](https://www.youtube.com/watch?v=_YFZZc5jIfY)
 - [Intro to Rust Async Function Execution With Smol 🦀 Rust Programming Tutorial for Developers](https://www.youtube.com/watch?v=NSgyNb0egm4)
 - [Intro Guide to Rust Documentation With Rustdoc 🦀 Rust Tutorial for Developers](https://www.youtube.com/watch?v=G2_Tb2f2F1s)
+- [Crafting an Interpreter in Rust #01: Basic Bytecode Chunks](https://tube.xy-space.de/w/weDkpD5BB8mAWcyUQXzxhu)
+- [Crafting an Interpreter in Rust #02: First Virtual Machine](https://tube.xy-space.de/w/1uSn42TmjCUpR2Ta23CgMA)
 
 ## Rust Books Recommendation
 - Claus Matzinger • Learn Rust Programming • https://amzn.to/3PeN0Fx
