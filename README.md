@@ -98,6 +98,8 @@ A small selection of other guides and tutorial for Rust:
 - [Rustlings Rewrite](https://mo8it.com/blog/rustlings-rewrite/)
 - [Teaching Rust](https://mo8it.com/blog/teaching-rust/)
 - [Teach-rs](https://teach-rs.trifectatech.org/)
+- [Different Filesystems Implementations over FUSE](https://github.com/libfuse/libfuse/wiki/Filesystems)
+- [Writing a Simple Filesystem Using FUSE in C](https://maastaar.net/fuse/linux/filesystem/c/2016/05/21/writing-a-simple-filesystem-using-fuse/)
 
 ## YouTube Videos to look for (what I watched until now)
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
