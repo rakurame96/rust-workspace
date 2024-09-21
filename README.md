@@ -89,6 +89,7 @@ A small selection of other guides and tutorial for Rust:
 - [Deploying Rust in Existing Firmware Codebases](https://security.googleblog.com/2024/09/deploying-rust-in-existing-firmware.html)
 - [Rust to Assembly: Understanding the Inner Workings of Rust](https://eventhelix.com/rust/)
 - [Rust - A low-level echo server using io_uring](https://www.thespatula.io/rust/rust_io_uring_echo_server/)
+- [Understanding Memory Ordering in Rust](https://emschwartz.me/understanding-memory-ordering-in-rust/)
 
 ## Interesting Rust Projects
 - [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)
