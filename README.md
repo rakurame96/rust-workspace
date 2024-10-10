@@ -90,6 +90,8 @@ A small selection of other guides and tutorial for Rust:
 - [Rust to Assembly: Understanding the Inner Workings of Rust](https://eventhelix.com/rust/)
 - [Rust - A low-level echo server using io_uring](https://www.thespatula.io/rust/rust_io_uring_echo_server/)
 - [Understanding Memory Ordering in Rust](https://emschwartz.me/understanding-memory-ordering-in-rust/)
+- [Learning Rust as a C/Python programmer](https://medium.com/@nevo.krien/learning-rust-as-a-c-python-programmer-6273f5a63721)
+- [A Simplified Comparison: Rust and Pointers](https://hackernoon.com/a-simplified-comparison-rust-and-pointers?source=rss&_bhlid=7d9e5889224cb9159071d99f96c7021d1b9a8bca)
 
 ## Interesting Rust Projects
 - [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)
@@ -101,6 +103,8 @@ A small selection of other guides and tutorial for Rust:
 - [Teach-rs](https://teach-rs.trifectatech.org/)
 - [Different Filesystems Implementations over FUSE](https://github.com/libfuse/libfuse/wiki/Filesystems)
 - [Writing a Simple Filesystem Using FUSE in C](https://maastaar.net/fuse/linux/filesystem/c/2016/05/21/writing-a-simple-filesystem-using-fuse/)
+- [Are we web yet?](https://www.arewewebyet.org/)
+- 
 
 ## YouTube Videos to look for (what I watched until now)
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
@@ -117,6 +121,7 @@ A small selection of other guides and tutorial for Rust:
 - [Intro Guide to Rust Documentation With Rustdoc 🦀 Rust Tutorial for Developers](https://www.youtube.com/watch?v=G2_Tb2f2F1s)
 - [Crafting an Interpreter in Rust #01: Basic Bytecode Chunks](https://tube.xy-space.de/w/weDkpD5BB8mAWcyUQXzxhu)
 - [Crafting an Interpreter in Rust #02: First Virtual Machine](https://tube.xy-space.de/w/1uSn42TmjCUpR2Ta23CgMA)
+- [Building a web app from Scratch](https://www.youtube.com/playlist?list=PL8lUUBadSMNBNKMYJpUE830tBiN6bxVRw)
 
 ## Rust Books Recommendation
 - Claus Matzinger • Learn Rust Programming • https://amzn.to/3PeN0Fx
@@ -145,3 +150,6 @@ Please see the [Little Book of Rust Books](https://lborb.github.io/book/) for ev
 - [https://thejpster.org.uk/blog/blog-2024-08-08/](https://thejpster.org.uk/blog/blog-2024-08-08/)
 - [Embedded Rust Contribution Guide](https://www.theembeddedrustacean.com/p/embedded-rust-contribution-guide?_bhlid=407ff0625ecc2e17157dcbc36c986e1f10c2de34)
 - [Developing a cryptographically secure bootloader for RISC-V in Rust](https://www.codethink.co.uk/articles/2024/secure_bootloader/?_bhlid=990417fa0db0f78bdb27533093300493abdb0ba8)
+
+## Miscellaneous
+- [The AOSP and AAOS Meetup](https://aospandaaos.github.io/meetup.html)
