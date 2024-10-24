@@ -60,7 +60,6 @@ A small selection of other guides and tutorial for Rust:
 - [Gray-Scott with Rust - Writing High Performance Computing (HPC) in Rust!](https://grayscott-with-rust-grasland-5e6591fc7054976525da4f6c87122ea76c.pages.in2p3.fr/)
 - [Comprehensive Rust 🦀](https://comprehensive-rust.mo8it.com/)
 
-
 ## Online Articles
 - [Rust-Macros](https://earthly.dev/blog/rust-macros/)
 - [The Four Horsemen of Bad Rust Code](https://fosdem.org/2024/schedule/event/fosdem-2024-2434-the-four-horsemen-of-bad-rust-code/)
@@ -92,6 +91,10 @@ A small selection of other guides and tutorial for Rust:
 - [Understanding Memory Ordering in Rust](https://emschwartz.me/understanding-memory-ordering-in-rust/)
 - [Learning Rust as a C/Python programmer](https://medium.com/@nevo.krien/learning-rust-as-a-c-python-programmer-6273f5a63721)
 - [A Simplified Comparison: Rust and Pointers](https://hackernoon.com/a-simplified-comparison-rust-and-pointers?source=rss&_bhlid=7d9e5889224cb9159071d99f96c7021d1b9a8bca)
+- [Serde for trait objects - Part 1: Overview](https://voelklmichael.github.io/Blog/serde-trait-part1.html)
+- [Serde for trait objects - Part 2: Serialization](https://voelklmichael.github.io/Blog/serde-trait-part2.html)
+- [Serde for trait objects - Part 3: Deserialization](https://voelklmichael.github.io/Blog/serde-trait-part3.html)
+- [Nine Rules for Running Rust on Embedded Systems](https://towardsdatascience.com/nine-rules-for-running-rust-on-embedded-systems-b0c247ee877e)
 
 ## Interesting Rust Projects
 - [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)
@@ -104,7 +107,7 @@ A small selection of other guides and tutorial for Rust:
 - [Different Filesystems Implementations over FUSE](https://github.com/libfuse/libfuse/wiki/Filesystems)
 - [Writing a Simple Filesystem Using FUSE in C](https://maastaar.net/fuse/linux/filesystem/c/2016/05/21/writing-a-simple-filesystem-using-fuse/)
 - [Are we web yet?](https://www.arewewebyet.org/)
-- 
+- [Rust Technology](https://rust.technology/)
 
 ## YouTube Videos to look for (what I watched until now)
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
@@ -122,6 +125,8 @@ A small selection of other guides and tutorial for Rust:
 - [Crafting an Interpreter in Rust #01: Basic Bytecode Chunks](https://tube.xy-space.de/w/weDkpD5BB8mAWcyUQXzxhu)
 - [Crafting an Interpreter in Rust #02: First Virtual Machine](https://tube.xy-space.de/w/1uSn42TmjCUpR2Ta23CgMA)
 - [Building a web app from Scratch](https://www.youtube.com/playlist?list=PL8lUUBadSMNBNKMYJpUE830tBiN6bxVRw)
+- [Async Rust: the good, the bad, and the ugly - Steve Klabnik](https://www.youtube.com/watch?v=1zOd52_tUWg)
+- [Rust's Alien Data Types 👽 Box, Rc, Arc](https://www.youtube.com/watch?v=CTTiaOo4cbY&t=25s)
 
 ## Rust Books Recommendation
 - Claus Matzinger • Learn Rust Programming • https://amzn.to/3PeN0Fx
@@ -153,3 +158,4 @@ Please see the [Little Book of Rust Books](https://lborb.github.io/book/) for ev
 
 ## Miscellaneous
 - [The AOSP and AAOS Meetup](https://aospandaaos.github.io/meetup.html)
+- [Cryptography 101 with Alfred Menezes](https://cryptography101.ca/resources/)
