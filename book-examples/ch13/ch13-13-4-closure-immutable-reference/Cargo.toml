@@ -1,0 +1,6 @@
+[package]
+name = "ch13-13-4-closure-immutable-reference"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

@@ -25,7 +25,8 @@ impl Config {
 
 pub fn run(config: Config) -> Result<(), Box<dyn Error>> {
     let fs_contents = fs::read_to_string(config.file_path)?;
-
+    
+    #[allow(unused_variables)]
     let results = if config.ignore_case {
         search_case_insensitive(&config.query, &fs_contents)
     } else {
