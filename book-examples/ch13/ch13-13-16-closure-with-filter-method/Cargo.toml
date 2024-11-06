@@ -1,0 +1,6 @@
+[package]
+name = "ch13-13-16-closure-with-filter-method"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
