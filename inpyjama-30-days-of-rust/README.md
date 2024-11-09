@@ -10,7 +10,14 @@ cargo new <package_name> --vcs none
 
 #### to build
 ```shell
+// this comment will compile the software in the dev mode means less compiler optimisations
 cargo build
+```
+
+#### to build in release mode
+```shell
+// this will compile the software in the release mode and even better compiler optimisation will be applied
+cargo build --release
 ```
 
 #### to run
@@ -35,9 +42,14 @@ Example: `rustc main.rs`
 cargo update
 ```
 
-#### to read documentation about the installed crates
+#### to generate the documentation and open the html
 ```shell
 cargo doc --open
+```
+
+#### to generate the documentation
+```shell
+cargo doc
 ```
 
 #### to create a library crate with git initialized
@@ -837,6 +849,23 @@ files in the src/bin directory: each file will be a separate binary crate.
 **Tests**
 - **Unit tests** are small and more focused, testing one module in isolation at a time, and can test private interfaces. 
 - **Integration tests** are entirely external to your library and use your code in the same way any other external code would, using only the public interface and potentially exercising multiple modules per test.
+
+**Optimisation Level**
+- By default, opt-level is set to 0. Means, don't do much optimisation as the project is still in development phase and frequent changes are expected. This results in less compile time
+- ```rust
+    // Cargo.toml
+    [profile.dev]
+    opt-level = 0
+
+    [profile.release]
+    opt-level = 3
+  ```
+- To override the default setting, try the below mmethod
+- ```rust
+    // Cargo.toml
+    [profile.dev]
+    opt-level = 1       // overrides the default value 0
+  ```
 
 # Interesting Articles to read
 * Author of this below site : [Amos Wenger](https://github.com/fasterthanlime)
