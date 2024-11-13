@@ -3,6 +3,7 @@ use std::process;
 
 use cli_minigrep::Config;
 
+#[allow(unused)]
 fn main() {
     let args: Vec<String> = env::args().collect();
     //dbg!(args);

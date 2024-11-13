@@ -1,11 +1,14 @@
+#[allow(unused)]
 use std::io::Write;
 
+#[allow(unused)]
 macro_rules! my_println {
     ($x: expr) => {
         let _ = writeln!(std::io::stdout(), "{}", $x);
         };
 }
 
+#[allow(unused)]
 macro_rules! my_println_with_args {
     ($($args:tt)*) => {
         let _ = writeln!(std::io::stdout(), "{}", format_args!($($args)*));
