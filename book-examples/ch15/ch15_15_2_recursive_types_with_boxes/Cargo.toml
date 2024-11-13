@@ -1,0 +1,6 @@
+[package]
+name = "ch15_15_2_recursive_types_with_boxes"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

@@ -1,0 +1,6 @@
+[package]
+name = "ch15_15_7_dereference_operator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
