@@ -23,6 +23,7 @@ The Rust project hosts many resources. These cover Rust in general:
 - [The Rust Reference](https://doc.rust-lang.org/reference/): an incomplete book which describes the Rust grammar and memory model.
 - [The Cargo Book](https://doc.rust-lang.org/cargo/reference)
 - [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html)
+- [Rust 2024](https://doc.rust-lang.org/nightly/edition-guide/rust-2024/index.html)
 
 More specialized guides hosted on the official Rust site:
 
@@ -95,6 +96,7 @@ A small selection of other guides and tutorial for Rust:
 - [Serde for trait objects - Part 2: Serialization](https://voelklmichael.github.io/Blog/serde-trait-part2.html)
 - [Serde for trait objects - Part 3: Deserialization](https://voelklmichael.github.io/Blog/serde-trait-part3.html)
 - [Nine Rules for Running Rust on Embedded Systems](https://towardsdatascience.com/nine-rules-for-running-rust-on-embedded-systems-b0c247ee877e)
+- [Async Rust in Three Parts](https://jacko.io/async_intro.html)
 
 ## Interesting Rust Projects
 - [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)

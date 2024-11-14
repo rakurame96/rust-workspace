@@ -1,0 +1,6 @@
+[package]
+name = "ch15_15_16_box_explicit_drop"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
