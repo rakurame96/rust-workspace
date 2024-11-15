@@ -135,6 +135,13 @@ cargo clippy -- --A=clippy::to_string_in_format_args
 cargo clippy --fix --allow-dirty -- --D=clippy::to_string_in_format_args
 ```
 
+### to install rust from rustup
+```shell
+# installs nightly (unstable) version
+rustup install nightly
+rustup default nightly
+```
+
 > **_NOTE: Ruslings Commands_**
 Commands available to you in watch mode:
   * `hint`   - prints the current exercise's hint

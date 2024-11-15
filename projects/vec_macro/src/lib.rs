@@ -19,7 +19,7 @@ macro_rules! vec_macro {
     ($( $x:expr ),* ) => {
         let mut v = Vec::new();
         $(v.push($x); )*
-        v
+        drop(v);
     };
 }
 
@@ -28,7 +28,7 @@ macro_rules! vec_macro_comma {
     ($( $x:expr ),* ,) => {
         let mut v = Vec::new();
         $(v.push($x); )*
-        v
+        drop(v);
     };
 }
 
