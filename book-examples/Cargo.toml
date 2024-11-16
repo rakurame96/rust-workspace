@@ -14,4 +14,5 @@ members = [
     "ch13/ch13-1-1-closures-basic", "ch13/ch13-13-2-type-annotations", "ch13/ch13-13-3-closure-different-type", "ch13/ch13-13-4-closure-immutable-reference", "ch13/ch13-13-5-closure-mutable-reference", "ch13/ch13-13-6-closure-thread-spawning", "ch13/ch13-13-7-sort-by-key", "ch13/ch13-13-8-sort-by-key-FnOnce", "ch13/ch13-13-10-iterators", "ch13/ch13-13-12-iterators-next-method", "ch13/ch13-13-15-consuming-adapters-iterator", "ch13/ch13-13-16-closure-with-filter-method", 
     "ch14/ch14_14_1_useful_documentation", "ch14/ch14_14_3_export_public_apis", "ch14/ch14_14_5_export_pub_use", 
     "ch15/ch15_15_1_box", "ch15/ch15_15_2_recursive_types_with_boxes", "ch15/ch15_15_7_dereference_operator", "ch15/ch15_15_8_own_smart_pointer", "ch15/ch15_15_11_box_deref_coercion", "ch15/ch15_15_11_box_derefMut_coercion", "ch15/ch15_15_14_box_drop_trait", "ch15/ch15_15_16_box_explicit_drop", "ch15/ch15_15_18_rc_pointer", "ch15/ch15_15_19_refcell_gpt_example", "ch15/ch15_15_20_refcell_example", "ch15/ch15_15_24_refcell_multiple_owners", "ch15/ch15_15_25_rust_memory_leak", 
+    "ch16/ch16_16_1_new_thread", "ch16/ch16_16_2_join_handle", 
 ]
