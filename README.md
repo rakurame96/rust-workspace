@@ -97,6 +97,9 @@ A small selection of other guides and tutorial for Rust:
 - [Serde for trait objects - Part 3: Deserialization](https://voelklmichael.github.io/Blog/serde-trait-part3.html)
 - [Nine Rules for Running Rust on Embedded Systems](https://towardsdatascience.com/nine-rules-for-running-rust-on-embedded-systems-b0c247ee877e)
 - [Async Rust in Three Parts](https://jacko.io/async_intro.html)
+- [Impl Snake For Micro:bit - Embedded async Rust on BBC Micro:bit with Embassy](https://gitlab.com/cyril-marpaud/impl_snake_for_microbit/-/blob/main/README.md)
+- [Tutorial: Implementing JSON parsing (Rust)](https://blog.davimiku.com/tutorials/json-parsing-rust-1)
+- [Rust needs an official specification](https://tweedegolf.nl/en/blog/140/rust-needs-an-official-specification)
 
 ## Interesting Rust Projects
 - [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)

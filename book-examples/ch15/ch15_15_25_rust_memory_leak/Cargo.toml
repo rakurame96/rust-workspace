@@ -1,0 +1,6 @@
+[package]
+name = "ch15_15_25_rust_memory_leak"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
