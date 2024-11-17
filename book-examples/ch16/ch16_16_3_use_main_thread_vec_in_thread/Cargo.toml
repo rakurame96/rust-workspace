@@ -1,0 +1,6 @@
+[package]
+name = "ch16_16_3_use_main_thread_vec_in_thread"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
