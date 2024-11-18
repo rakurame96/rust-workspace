@@ -1,0 +1,6 @@
+[package]
+name = "ch16_16_9_try_access_sent_value"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

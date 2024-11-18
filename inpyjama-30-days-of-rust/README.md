@@ -25,6 +25,13 @@ cargo build --release
 cargo run
 ```
 
+#### to run quietly
+```shell
+# If you would like for Cargo to not print status messages about compiling and running the code, you can use the `-q`, or `--quiet`
+cargo run --quiet
+```
+
+
 #### for debug information
 ```shell
 rustc --explain <ErrorCode>

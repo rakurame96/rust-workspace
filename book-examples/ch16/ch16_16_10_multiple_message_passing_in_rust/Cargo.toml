@@ -1,0 +1,6 @@
+[package]
+name = "ch16_16_10_multiple_message_passing_in_rust"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
