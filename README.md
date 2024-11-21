@@ -113,6 +113,10 @@ A small selection of other guides and tutorial for Rust:
 - [Writing a Simple Filesystem Using FUSE in C](https://maastaar.net/fuse/linux/filesystem/c/2016/05/21/writing-a-simple-filesystem-using-fuse/)
 - [Are we web yet?](https://www.arewewebyet.org/)
 - [Rust Technology](https://rust.technology/)
+- [Writing Interpreters in Rust: a Guide](https://rust-hosted-langs.github.io/book/)
+- [hecto: Build Your Own Text Editor in Rust](https://www.flenker.blog/hecto/)
+- [Writing an OS in Rust](https://os.phil-opp.com/)
+- [Tutorial: Implementing JSON parsing (Rust)](https://blog.davimiku.com/tutorials/json-parsing-rust-1)
 
 ## YouTube Videos to look for (what I watched until now)
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
@@ -160,6 +164,7 @@ Please see the [Little Book of Rust Books](https://lborb.github.io/book/) for ev
 - [https://thejpster.org.uk/blog/blog-2024-08-08/](https://thejpster.org.uk/blog/blog-2024-08-08/)
 - [Embedded Rust Contribution Guide](https://www.theembeddedrustacean.com/p/embedded-rust-contribution-guide?_bhlid=407ff0625ecc2e17157dcbc36c986e1f10c2de34)
 - [Developing a cryptographically secure bootloader for RISC-V in Rust](https://www.codethink.co.uk/articles/2024/secure_bootloader/?_bhlid=990417fa0db0f78bdb27533093300493abdb0ba8)
+- [Pico Pico - Embedded Programming with Rust](https://pico.implrust.com/index.html)
 
 ## Miscellaneous
 - [The AOSP and AAOS Meetup](https://aospandaaos.github.io/meetup.html)

@@ -1,0 +1,6 @@
+[package]
+name = "ch16_16_13_mutex_multiple_thread"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

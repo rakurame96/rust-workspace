@@ -54,9 +54,14 @@ cargo update
 cargo doc --open
 ```
 
-#### to generate the documentation
+#### to generate the documentation (along with all dependent modules)
 ```shell
 cargo doc
+```
+
+#### To generate Cargo documentation for only your own module and exclude unused modules within your Rust project
+```shell
+cargo doc --no-deps
 ```
 
 #### to create a library crate with git initialized

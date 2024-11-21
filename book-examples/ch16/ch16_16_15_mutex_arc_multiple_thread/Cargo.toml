@@ -1,0 +1,6 @@
+[package]
+name = "ch16_16_15_mutex_arc_multiple_thread"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
