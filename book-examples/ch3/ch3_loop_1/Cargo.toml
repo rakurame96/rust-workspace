@@ -1,5 +1,5 @@
 [package]
-name = "ch3-shadowing"
+name = "ch3_loop_1"
 version = "0.1.0"
 edition = "2021"
 

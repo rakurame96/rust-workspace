@@ -1,5 +1,5 @@
 [package]
-name = "ch3-datatypes"
+name = "ch3_conditions"
 version = "0.1.0"
 edition = "2021"
 
