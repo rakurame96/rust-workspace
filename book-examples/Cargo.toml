@@ -3,8 +3,8 @@ resolver = "2"
 
 members = [ 
     "ch3/ch3_conditions", "ch3/ch3_constants", "ch3/ch3_datatypes", "ch3/ch3_for", "ch3/ch3_functions", "ch3/ch3_loop_1", "ch3/ch3_shadowing", "ch3/ch3_while",
-    "ch4/ch4-4-1", "ch4/ch4-4-3-ownership", "ch4/ch4-4-4-return-values", "ch4/ch4-4-5-return-ownership", "ch4/ch4-4-6-1-mutable-references", "ch4/ch4-4-6-references-borrowing", "ch4/ch4-4-7-slice-type", "ch4/ch4-4-7-1-string-literal-slices", "ch4/ch4-4-7-2-other-slices", 
-    "ch5/ch5-5-1-struct-definition", "ch5/ch5-5-3-change-struct-value", "ch5/ch5-5-5-struct-fields-as-args", "ch5/ch5-5-7-struct-update", "ch5/ch5-5-7-1-struct-tuple", "ch5/ch5-5-8-area-rectangle", "ch5/ch5-5-12-dervied-traits", "ch5/ch5-5-13-method-syntax", "ch5/ch5-5-15-struct-method-param", "ch5/ch5-5-16-multiple-impl-block",
+    "ch4/ch4_4_1", "ch4/ch4_4_3_ownership", "ch4/ch4_4_4_return_values", "ch4/ch4_4_5_return_ownership", "ch4/ch4_4_6_1_mutable_references", "ch4/ch4_4_6_references_borrowing", "ch4/ch4_4_7_slice_type", "ch4/ch4_4_7_1_string_literal_slices", "ch4/ch4_4_7_2_other_slices", 
+    "ch5/ch5_5_1_struct_definition", "ch5/ch5_5_3_change_struct_value", "ch5/ch5_5_5_struct_fields_as_args", "ch5/ch5_5_7_struct_update", "ch5/ch5_5_7_1_struct_tuple", "ch5/ch5_5_8_area_rectangle", "ch5/ch5_5_12_dervied_traits", "ch5/ch5_5_13_method_syntax", "ch5/ch5_5_15_struct_method_param", "ch5/ch5_5_16_multiple_impl_block",
     "ch6/ch6-6-1-enum-example", "ch6/ch6-6-3-enum-match", "ch6/ch6-6-4-enum-bind-values", "ch6/ch6-6-5-enum-option-exp", "ch6/ch6-6-6-if-let", 
     "ch7/ch7-1-1-restaurant-lib/restaurant", "ch7/ch7-7-12-use-stmt-rules", "ch7/ch7-7-16-new-names-as-kywd", "ch7/ch7-7-21-split-mod-into-new-files", 
     "ch8/ch8-8-3-vectors", "ch8/ch8-8-4-vector-read-elements", "ch8/ch8-8-6-vector-mut-immut-borrow", "ch8/ch8-8-8-vector-iteration", "ch8/ch8-8-14-string-values", "ch8/ch8-8-16-string-slices", "ch8/ch8-8-18-string-concat", "ch8/ch8-8-20-create-hash-map", "ch8/ch8-8-21-access-hash-map", "ch8/ch8-8-22-hash-map-ownership", "ch8/ch8-8-25-hash-map-value-update", 
