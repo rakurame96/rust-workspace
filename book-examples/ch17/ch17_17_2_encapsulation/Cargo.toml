@@ -1,0 +1,6 @@
+[package]
+name = "ch17_17_2_encapsulation"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
