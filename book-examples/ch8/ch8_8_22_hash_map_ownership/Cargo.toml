@@ -1,0 +1,8 @@
+[package]
+name = "ch8_8_22_hash_map_ownership"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
