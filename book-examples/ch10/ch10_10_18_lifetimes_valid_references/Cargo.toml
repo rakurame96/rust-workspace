@@ -1,0 +1,6 @@
+[package]
+name = "ch10_10_18_lifetimes_valid_references"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

@@ -1,0 +1,6 @@
+[package]
+name = "ch10_10_16_lifetimes_dangling_references"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

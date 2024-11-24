@@ -1,0 +1,6 @@
+[package]
+name = "ch10_10_1_largest_number"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

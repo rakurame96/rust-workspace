@@ -1,6 +1,0 @@
-[package]
-name = "ch10-10-7-struct-generic-T-type-diff-values"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]

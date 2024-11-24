@@ -1,0 +1,6 @@
+[package]
+name = "ch10_10_8_struct_multiple_generic_type"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

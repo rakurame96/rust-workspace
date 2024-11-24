@@ -1,0 +1,6 @@
+[package]
+name = "ch10_10_7_struct_generic_T_type_diff_values"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

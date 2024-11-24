@@ -1,0 +1,7 @@
+[package]
+name = "ch10_10_14_trait_default_impl"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+
