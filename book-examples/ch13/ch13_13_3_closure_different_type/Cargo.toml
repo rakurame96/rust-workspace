@@ -1,0 +1,6 @@
+[package]
+name = "ch13_13_3_closure_different_type"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

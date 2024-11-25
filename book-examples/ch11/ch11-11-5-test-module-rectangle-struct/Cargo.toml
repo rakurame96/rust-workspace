@@ -1,6 +1,0 @@
-[package]
-name = "ch11-11-5-test-module-rectangle-struct"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]

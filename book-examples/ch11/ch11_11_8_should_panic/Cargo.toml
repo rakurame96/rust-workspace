@@ -1,0 +1,6 @@
+[package]
+name = "ch11_11_8_should_panic"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

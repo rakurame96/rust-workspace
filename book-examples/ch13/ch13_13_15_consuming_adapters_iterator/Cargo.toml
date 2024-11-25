@@ -1,0 +1,6 @@
+[package]
+name = "ch13_13_15_consuming_adapters_iterator"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

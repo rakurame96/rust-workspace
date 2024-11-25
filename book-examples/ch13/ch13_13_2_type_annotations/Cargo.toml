@@ -1,0 +1,6 @@
+[package]
+name = "ch13_13_2_type_annotations"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

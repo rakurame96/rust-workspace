@@ -1,0 +1,6 @@
+[package]
+name = "ch11_11_10_test_function_println"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

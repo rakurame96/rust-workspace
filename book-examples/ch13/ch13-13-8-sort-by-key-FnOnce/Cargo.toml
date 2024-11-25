@@ -1,6 +1,0 @@
-[package]
-name = "ch13-13-8-sort-by-key-FnOnce"
-version = "0.1.0"
-edition = "2021"
-
-[dependencies]
