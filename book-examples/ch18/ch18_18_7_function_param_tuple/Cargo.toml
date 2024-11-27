@@ -1,0 +1,6 @@
+[package]
+name = "ch18_18_7_function_param_tuple"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
