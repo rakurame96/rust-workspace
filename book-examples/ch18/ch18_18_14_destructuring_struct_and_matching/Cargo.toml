@@ -1,0 +1,6 @@
+[package]
+name = "ch18_18_14_destructuring_struct_and_matching"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

@@ -1,0 +1,6 @@
+[package]
+name = "ch18_18_15_destructuring_enums"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

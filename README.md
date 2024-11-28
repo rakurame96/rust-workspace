@@ -117,6 +117,8 @@ A small selection of other guides and tutorial for Rust:
 - [hecto: Build Your Own Text Editor in Rust](https://www.flenker.blog/hecto/)
 - [Writing an OS in Rust](https://os.phil-opp.com/)
 - [Tutorial: Implementing JSON parsing (Rust)](https://blog.davimiku.com/tutorials/json-parsing-rust-1)
+- [RustC - Compiler Implementation](https://doc.rust-lang.org/nightly/nightly-rustc/src)
+- [Rust Driver - Developer Guide](https://rustc-dev-guide.rust-lang.org/rustc-driver/intro.html)
 
 ## YouTube Videos to look for (what I watched until now)
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
