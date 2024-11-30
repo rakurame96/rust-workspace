@@ -1,0 +1,6 @@
+[package]
+name = "ch18_18_18_underscore_within_patterns"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

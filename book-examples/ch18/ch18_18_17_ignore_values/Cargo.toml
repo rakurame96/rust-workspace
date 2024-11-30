@@ -1,0 +1,6 @@
+[package]
+name = "ch18_18_17_ignore_values"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
