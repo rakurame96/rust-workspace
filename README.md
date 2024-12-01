@@ -60,6 +60,8 @@ A small selection of other guides and tutorial for Rust:
 - [The Little Book of Rust Macros](https://danielkeep.github.io/tlborm/book/README.html)
 - [Gray-Scott with Rust - Writing High Performance Computing (HPC) in Rust!](https://grayscott-with-rust-grasland-5e6591fc7054976525da4f6c87122ea76c.pages.in2p3.fr/)
 - [Comprehensive Rust 🦀](https://comprehensive-rust.mo8it.com/)
+- [Rust Design Patterns](https://rust-unofficial.github.io/patterns/)
+- [Rust Practice Questions](https://rust-unofficial.github.io/rust-practise-questions/about.html)
 
 ## Online Articles
 - [Rust-Macros](https://earthly.dev/blog/rust-macros/)
