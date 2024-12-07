@@ -62,6 +62,8 @@ A small selection of other guides and tutorial for Rust:
 - [Comprehensive Rust 🦀](https://comprehensive-rust.mo8it.com/)
 - [Rust Design Patterns](https://rust-unofficial.github.io/patterns/)
 - [Rust Practice Questions](https://rust-unofficial.github.io/rust-practise-questions/about.html)
+- [Modern and Emerging Programming Languages - Rust](https://fitech101.aalto.fi/programming-languages/rust/1-introduction/)
+- [Rust Cookbook](https://rust-lang-nursery.github.io/rust-cookbook)
 
 ## Online Articles
 - [Rust-Macros](https://earthly.dev/blog/rust-macros/)
@@ -102,6 +104,7 @@ A small selection of other guides and tutorial for Rust:
 - [Impl Snake For Micro:bit - Embedded async Rust on BBC Micro:bit with Embassy](https://gitlab.com/cyril-marpaud/impl_snake_for_microbit/-/blob/main/README.md)
 - [Tutorial: Implementing JSON parsing (Rust)](https://blog.davimiku.com/tutorials/json-parsing-rust-1)
 - [Rust needs an official specification](https://tweedegolf.nl/en/blog/140/rust-needs-an-official-specification)
+- [Breakage! in the Cargo.toml — How Rust Package Features Work (And Break)](https://predr.ag/blog/breakage-in-the-cargo-toml-how-rust-package-features-work/)
 
 ## Interesting Rust Projects
 - [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)
@@ -121,6 +124,8 @@ A small selection of other guides and tutorial for Rust:
 - [Tutorial: Implementing JSON parsing (Rust)](https://blog.davimiku.com/tutorials/json-parsing-rust-1)
 - [RustC - Compiler Implementation](https://doc.rust-lang.org/nightly/nightly-rustc/src)
 - [Rust Driver - Developer Guide](https://rustc-dev-guide.rust-lang.org/rustc-driver/intro.html)
+- [Building a real-time chat using WebSockets over HTTP/2 streams](https://c410-f3r.github.io/thoughts/building-a-real-time-chat-using-web-sockets-over-http2-streams/)
+- [Streaming Audio Apis: The Model](https://xd009642.github.io/2024/12/03/streaming-audio-APIs-the-model.html)
 
 ## YouTube Videos to look for (what I watched until now)
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
@@ -169,6 +174,8 @@ Please see the [Little Book of Rust Books](https://lborb.github.io/book/) for ev
 - [Embedded Rust Contribution Guide](https://www.theembeddedrustacean.com/p/embedded-rust-contribution-guide?_bhlid=407ff0625ecc2e17157dcbc36c986e1f10c2de34)
 - [Developing a cryptographically secure bootloader for RISC-V in Rust](https://www.codethink.co.uk/articles/2024/secure_bootloader/?_bhlid=990417fa0db0f78bdb27533093300493abdb0ba8)
 - [Pico Pico - Embedded Programming with Rust](https://pico.implrust.com/index.html)
+- [Rust 🦀 on the RP2040](https://baileytownsend.dev/articles/getting-started-with-rust-an-rp2040)
+- [Implementing async APIs for microcontroller peripherals](https://beaurivage.io/atsamd-hal-async/)
 
 ## Miscellaneous
 - [The AOSP and AAOS Meetup](https://aospandaaos.github.io/meetup.html)
