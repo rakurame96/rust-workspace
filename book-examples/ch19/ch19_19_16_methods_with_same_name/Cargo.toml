@@ -1,0 +1,6 @@
+[package]
+name = "ch19_19_16_methods_with_same_name"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
