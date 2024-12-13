@@ -1,0 +1,6 @@
+[package]
+name = "ch19_19_27_function_pointers"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

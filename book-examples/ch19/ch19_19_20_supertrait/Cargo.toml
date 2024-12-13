@@ -1,0 +1,6 @@
+[package]
+name = "ch19_19_20_supertrait"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]

@@ -1,0 +1,6 @@
+[package]
+name = "ch19_19_23_wrapper_type_for_vec_string"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
