@@ -40,7 +40,8 @@ A small selection of other guides and tutorial for Rust:
 - [Rust for Embedded C Programmers](https://docs.opentitan.org/doc/ug/rust_for_c/): covers Rust from the perspective of developers who write firmware in C.
 - [Rust for professionals](https://overexact.com/rust-for-professionals/): covers the syntax of Rust using side-by-side comparisons with other languages such as C, C++, Java, JavaScript, and Python.
 - [Rust on Exercism](https://exercism.org/tracks/rust): 100+ exercises to help you learn Rust.
-- [Ferrous Teaching Material](https://ferrous-systems.github.io/teaching-material/index.html): a series of small presentations covering both basic and advanced part of the Rust language. Other topics such as WebAssembly, and async/await are also covered.
+- [Ferrous Teaching Material - Book](https://rust-training.ferrous-systems.com/latest/book/ ): a series of small presentations covering both basic and advanced part of the Rust language. Other topics such as WebAssembly, and async/await are also covered.
+- [Ferrous Teaching Material - Exercises](https://rust-exercises.ferrous-systems.com/latest/book/): Ferrocus Supplement Materials - Exercises
 - [Beginner's Series to Rust](https://docs.microsoft.com/en-us/shows/beginners-series-to-rust/) and [Take your first steps with Rust](https://docs.microsoft.com/en-us/learn/paths/rust-first-steps/): two Rust guides aimed at new developers. The first is a set of 35 videos and the second is a set of 11 modules which covers Rust syntax and basic constructs.
 - [Learn Rust With Entirely Too Many Linked Lists](https://rust-unofficial.github.io/too-many-lists/): in-depth exploration of Rust's memory management rules, through implementing a few different types of list structures.
 - [Rustonomicon Book](https://doc.rust-lang.org/nomicon/intro.html)
