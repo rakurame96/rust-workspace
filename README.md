@@ -146,6 +146,11 @@ A small selection of other guides and tutorial for Rust:
 - [Building a web app from Scratch](https://www.youtube.com/playlist?list=PL8lUUBadSMNBNKMYJpUE830tBiN6bxVRw)
 - [Async Rust: the good, the bad, and the ugly - Steve Klabnik](https://www.youtube.com/watch?v=1zOd52_tUWg)
 - [Rust's Alien Data Types 👽 Box, Rc, Arc](https://www.youtube.com/watch?v=CTTiaOo4cbY&t=25s)
+- [Rust Linz, August 2021 - Rainer Stropek - Rust iterators](https://www.youtube.com/watch?v=R0ufQe5DRaw)
+- [Rust Linz, July 2021 - Rainer Stropek - Traits, not your grandparents' interfaces](https://www.youtube.com/watch?v=B0fL3WmJZsc)
+- [Rust Before Main - Ryan Levick - Rust Linz, July 2022](https://www.youtube.com/watch?v=q8irLfXwaFM)
+- [Rust Linz, October 2021 - Rust Closures by Rainer Stropek](https://www.youtube.com/watch?v=R0ufQe5DRaw&t=135s)
+- [Rust Linz, September 2021 - Yoshua Wuyts - Futures Concurrency in the Future, Maybe](https://www.youtube.com/watch?v=QlPDI9IsSXU)
 
 ## Rust Books Recommendation
 - Claus Matzinger • Learn Rust Programming • https://amzn.to/3PeN0Fx
