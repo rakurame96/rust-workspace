@@ -29,8 +29,9 @@ cargo run
 ```shell
 # If you would like for Cargo to not print status messages about compiling and running the code, you can use the `-q`, or `--quiet`
 cargo run --quiet
-```
 
+cargo run -q
+```
 
 #### for debug information
 ```shell
@@ -147,12 +148,42 @@ cargo clippy -- --A=clippy::to_string_in_format_args
 cargo clippy --fix --allow-dirty -- --D=clippy::to_string_in_format_args
 ```
 
+### Run a binary rust program
+```shell
+# here, 'true' is the binary name 
+# The --bin option is the name of the binary target to run.
+cargo run --quiet --bin true
+```
+
+### Run tests using 1 thread
+```shell
+# Rust is a safe language for writing concurrent code, which means code can be run across multiple threads. 
+# Testing takes advantage of this concurrency to run many tests in parallel, so the test results may appear in a different order each time you run them. 
+# If you would like to run the tests in order, you can run them on a single thread, use below command
+cargo test -- --test-threads=1
+```
+
 ### to install rust from rustup
 ```shell
 # installs nightly (unstable) version
 rustup install nightly
 rustup default nightly
 ```
+
+### Rust Crates Versioning Details
+- Rust libraries are called crates, and they are expected to use semantic version numbers in the form `major.minor.patch`, so that `1.2.4`.
+- From the above example (`1.2.4`),
+    - major version = 1
+    - minor version = 2
+    - patch version = 4. 
+- A change in the major version indicates a breaking change in the crate’s public application programming interface (API).
+
+### Testing
+- **Inside-out or unit testing** is when you write tests for the functions inside your program.
+- **Outside-in or integration testing** is when you write tests that run your programs as the user might, and that’s what we’ll do for this program.
+
+### Cargo Lock File
+- `Cargo.lock` file records the exact versions of the dependencies used to build your program. You should not edit this file.
 
 > **_NOTE: Ruslings Commands_**
 Commands available to you in watch mode:
