@@ -163,6 +163,22 @@ cargo run --quiet --bin true
 cargo test -- --test-threads=1
 ```
 
+### Cargo Arguments
+- ```shell
+  # below command will result in error
+  cargo run -n Hello world
+  # below command will execute without any error
+  cargo run -- -n Hello world
+  ```
+- Without `--`: Cargo tries to interpret the arguments as options for itself. Since `-n` is not a valid Cargo flag, it results in an error.
+- With `--`: The `--` tells Cargo, "Stop processing options for yourself; pass everything after this directly to the program."
+- **When to Use --?**
+    - Use `--` whenever you need to pass arguments to your Rust program that might be confused as flags for Cargo. For example:
+    - ```shell
+      cargo run -- -v
+      ```
+    - This passes `-v` to your program, not to Cargo. Without `--`, Cargo would interpret `-v` as a flag for itself (e.g., for verbose output).
+
 ### to install rust from rustup
 ```shell
 # installs nightly (unstable) version
