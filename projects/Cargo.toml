@@ -2,5 +2,5 @@
 resolver = "2"
 
 members = [ "async-handson-smol", "cli-minigrep", "closures",
-    "guessing-game", "inline_asm_example", "json_macro", "lint-help", "macro_rules", "strsplit", "tcp_listener", "uds-simulator/uds-simulator", "vec_macro",
+    "guessing-game", "inline_asm_example", "json_macro", "lint-help", "lists", "macro_rules", "strsplit", "tcp_listener", "uds-simulator/uds-simulator", "vec_macro",
 ]
