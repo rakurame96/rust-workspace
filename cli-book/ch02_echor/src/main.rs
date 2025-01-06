@@ -5,12 +5,12 @@ use clap::{Arg, ArgAction, Command};
 // and any arguments passed to the program while calling the cargo run
 // ex: cargo run a b c
 Args {
-    inner: ["E:\\Learning-to-code\\rust-workspace\\cli-book\\target\\debug\\echor.exe", "a", "b", "c"]
+    inner: ["E:\\Learning-to-code\\rust-workspace\\cli-book\\target\\debug\\ch02_echor.exe", "a", "b", "c"]
     }
 */
 fn main() {
     // println!("{:?}", std::env::args());
-    let matches = Command::new("echor")
+    let matches = Command::new("ch02_echor")
         .version("0.1.0")
         .author("Rakuram <blog.rakuram@gmail.com>")
         .about("Rust Echo Command")

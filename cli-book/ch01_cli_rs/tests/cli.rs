@@ -19,10 +19,10 @@ fn runs_ls() {
 }
 
 #[test]
-fn runs_cli_rs() {
+fn runs_ch01_cli_rs() {
     use std::process::Command;
 
-    let mut cmd = Command::new("cli-rs");
+    let mut cmd = Command::new("ch01_cli_rs");
     let res = cmd.output();
     assert!(res.is_ok());
 }
@@ -32,7 +32,7 @@ fn runs_bin_dir() {
     use assert_cmd::Command;
 
     // let mut cmd = Command::cargo_bin("hello").unwrap();        // fails as there is no crate named 'hello'
-    let mut cmd = Command::cargo_bin("cli-rs").unwrap();
+    let mut cmd = Command::cargo_bin("ch01_cli_rs").unwrap();
     cmd.assert().success();
 }
 
@@ -57,7 +57,7 @@ fn runs_bin_dir_stdout() {
     use assert_cmd::Command;
 
     // let mut cmd = Command::cargo_bin("hello").unwrap();        // fails as there is no crate named 'hello'
-    let mut cmd = Command::cargo_bin("cli-rs").unwrap();
+    let mut cmd = Command::cargo_bin("ch01_cli_rs").unwrap();
     // cmd.assert().success().stdout("Hello, World!\n");       // fails as the output is "Hello, world!\n"
     cmd.assert().success().stdout("Hello, world!\n");
 }

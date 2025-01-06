@@ -2,6 +2,6 @@
 resolver = "2"
 
 members = [ 
-    "cli-rs", 
-    "echor",
+    "ch01_cli_rs", 
+    "ch02_echor",
 ]

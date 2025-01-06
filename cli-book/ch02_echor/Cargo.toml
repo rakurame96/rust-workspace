@@ -1,5 +1,5 @@
 [package]
-name = "echor"
+name = "ch02_echor"
 version = "0.1.0"
 edition = "2021"
 
