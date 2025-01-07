@@ -106,6 +106,10 @@ A small selection of other guides and tutorial for Rust:
 - [Tutorial: Implementing JSON parsing (Rust)](https://blog.davimiku.com/tutorials/json-parsing-rust-1)
 - [Rust needs an official specification](https://tweedegolf.nl/en/blog/140/rust-needs-an-official-specification)
 - [Breakage! in the Cargo.toml — How Rust Package Features Work (And Break)](https://predr.ag/blog/breakage-in-the-cargo-toml-how-rust-package-features-work/)
+- [Building a Honeypot in Rust and Deploy it to Oracle for Free - Minimal TCP Stack in Rust](https://rust-trends.com/posts/building-a-honeypot-in-rust-and-deploy-it-to-oracle-for-free/)
+- [Four limitations of Rust's borrow checker](https://blog.polybdenum.com/2024/12/21/four-limitations-of-rust-s-borrow-checker.html)
+- [Building a Secure Hierarchical Key Derivation System in Rust](https://medium.com/@evadawnley/building-a-secure-hierarchical-key-derivation-system-in-rust-b5a0ecee18d7)
+- [Context-Generic Programming](https://contextgeneric.dev/)
 
 ## Interesting Rust Projects
 - [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)
@@ -127,6 +131,7 @@ A small selection of other guides and tutorial for Rust:
 - [Rust Driver - Developer Guide](https://rustc-dev-guide.rust-lang.org/rustc-driver/intro.html)
 - [Building a real-time chat using WebSockets over HTTP/2 streams](https://c410-f3r.github.io/thoughts/building-a-real-time-chat-using-web-sockets-over-http2-streams/)
 - [Streaming Audio Apis: The Model](https://xd009642.github.io/2024/12/03/streaming-audio-APIs-the-model.html)
+- [Context-Generic Programming Patterns Book](https://patterns.contextgeneric.dev/)
 
 ## YouTube Videos to look for (what I watched until now)
 - [All Rust features explained](https://www.youtube.com/watch?v=784JWR4oxOI)
