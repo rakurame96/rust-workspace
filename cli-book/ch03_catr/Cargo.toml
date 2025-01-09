@@ -1,0 +1,12 @@
+[package]
+name = "ch03_catr"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+clap = "4.5.23"
+
+[dev-dependencies]
+assert_cmd = "2.0.13"
+predicates = "3.0.4"
+rand = "0.8"

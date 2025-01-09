@@ -4,4 +4,5 @@ resolver = "2"
 members = [ 
     "ch01_cli_rs", 
     "ch02_echor",
+    "ch03_catr",
 ]
