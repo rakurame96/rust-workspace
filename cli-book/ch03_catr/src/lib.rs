@@ -1,7 +1,7 @@
-use std::error::Error;
 use clap::{Arg, ArgAction, Command};
+use std::error::Error;
 use std::fs::File;
-use std::io::{self, stdin, BufRead, BufReader};
+use std::io::{self, BufRead, BufReader};
 
 #[allow(unused)]
 #[derive(Debug)]
@@ -20,17 +20,68 @@ fn open(filename: &str) -> MyResult<Box<dyn BufRead>> {
     }
 }
 
+// method 1
+// pub fn run(config: Config) -> MyResult<()> {
+//     // dbg!(config);
+//     for filename in config.files {
+//         // println!("{}", filename);
+//         match open(&filename) {
+//             Err(err) => eprintln!("Failed to open {}: {}", filename, err),
+//             // Ok(_) => println!("Opened {}", filename),
+//             Ok(file) => {
+//                 let mut line_number  = 0;
+//                 for line_result in file.lines() {
+//                     let line = line_result?;
+//                     line_number += 1;
+
+//                     if config.number_lines {
+//                         println!("{:>6}\t{}", line_number, line);
+//                     } else {
+//                         println!("{}", line);
+//                     }
+
+//                     if config.number_nonblank_lines {
+//                         if line.is_empty() {
+//                             line_number -= 1;
+//                             continue;
+//                         } else {
+//                             println!("{:>6}\t{}", line_number, line);
+//                         }
+//                     }
+//                 }
+//             }
+//         }
+//     }
+//     Ok(())
+// }
+
+// method 2 - Idomatic way
 pub fn run(config: Config) -> MyResult<()> {
-    // dbg!(config);
     for filename in config.files {
-        // println!("{}", filename);
         match open(&filename) {
             Err(err) => eprintln!("Failed to open {}: {}", filename, err),
-            Ok(_) => println!("Opened {}", filename),            
+            Ok(file) => {
+                let mut last_num = 0; 
+                for (line_num, line) in file.lines().enumerate() {
+                    let line = line?;   // unwrapping from Result
+                    if config.number_lines {
+                        println!("{:6}\t{}", line_num + 1, line);
+                    } else if config.number_nonblank_lines {
+                        if !line.is_empty() {
+                            last_num += 1;
+                            println!("{:6}\t{}", last_num, line);
+                        } else {
+                            println!();
+                        }
+                    } else {
+                        println!("{}", line);
+                    }
+                }
+            }
         }
     }
     Ok(())
-} 
+}
 
 pub fn get_args() -> MyResult<Config> {
     let matches = Command::new("ch03_catr")
