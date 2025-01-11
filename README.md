@@ -110,6 +110,9 @@ A small selection of other guides and tutorial for Rust:
 - [Four limitations of Rust's borrow checker](https://blog.polybdenum.com/2024/12/21/four-limitations-of-rust-s-borrow-checker.html)
 - [Building a Secure Hierarchical Key Derivation System in Rust](https://medium.com/@evadawnley/building-a-secure-hierarchical-key-derivation-system-in-rust-b5a0ecee18d7)
 - [Context-Generic Programming](https://contextgeneric.dev/)
+- [From Go to Rust 1: async Dispatch](https://medium.com/rustaceans/from-go-to-rust-1-async-dispatch-866e042cd98a)
+- [A journey into File Transfer Protocols in Rust](https://blog.veeso.dev/blog/en/a-journey-into-file-transfer-protocols-in-rust/)
+- [Structured error handling in Rust](https://www.howtocodeit.com/articles/the-definitive-guide-to-rust-error-handling#structured-error-handling-in-rust)
 
 ## Interesting Rust Projects
 - [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)
