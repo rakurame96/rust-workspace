@@ -1,4 +1,4 @@
-# Learning rust
+k# Learning rust
 
 - Rustlings
 - Book: The Rust Programming Language by Steve Klabnik & Carol Nichols
@@ -113,6 +113,7 @@ A small selection of other guides and tutorial for Rust:
 - [From Go to Rust 1: async Dispatch](https://medium.com/rustaceans/from-go-to-rust-1-async-dispatch-866e042cd98a)
 - [A journey into File Transfer Protocols in Rust](https://blog.veeso.dev/blog/en/a-journey-into-file-transfer-protocols-in-rust/)
 - [Structured error handling in Rust](https://www.howtocodeit.com/articles/the-definitive-guide-to-rust-error-handling#structured-error-handling-in-rust)
+- [Understanding Rust Generics and How to use them](https://blog.logrocket.com/understanding-rust-generics/)
 
 ## Interesting Rust Projects
 - [Rust - Implementing WebSockets](https://www.thespatula.io/rust/rust_websocket/)
