@@ -1,4 +1,4 @@
-k# Learning rust
+# Learning rust
 
 - Rustlings
 - Book: The Rust Programming Language by Steve Klabnik & Carol Nichols
@@ -24,6 +24,7 @@ The Rust project hosts many resources. These cover Rust in general:
 - [The Cargo Book](https://doc.rust-lang.org/cargo/reference)
 - [Rust Compiler Development Guide](https://rustc-dev-guide.rust-lang.org/getting-started.html)
 - [Rust 2024](https://doc.rust-lang.org/nightly/edition-guide/rust-2024/index.html)
+- [Rust Language Cheat Sheet](https://github.com/ralfbiedert/cheats.rs/)
 
 More specialized guides hosted on the official Rust site:
 
