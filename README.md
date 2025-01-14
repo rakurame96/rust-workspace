@@ -198,3 +198,4 @@ Please see the [Little Book of Rust Books](https://lborb.github.io/book/) for ev
 - [The AOSP and AAOS Meetup](https://aospandaaos.github.io/meetup.html)
 - [Cryptography 101 with Alfred Menezes](https://cryptography101.ca/resources/)
 - [Developer Roadmaps - Community created roadmaps, guides and articles to help developers grow in their career](https://roadmap.sh/)
+- [LLM visualisation](https://bbycroft.net/llm)
